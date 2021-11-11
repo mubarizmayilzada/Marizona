@@ -1,0 +1,22 @@
+{
+  "name": "marizona",
+  "version": "1.0.0",
+  "description": "Full stack fast food website for marizona",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mubarizmayilzade/Full-stack-Fast-Food-Website.git"
+  },
+  "author": "Mubariz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mubarizmayilzade/Full-stack-Fast-Food-Website/issues"
+  },
+  "homepage": "https://github.com/mubarizmayilzade/Full-stack-Fast-Food-Website#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
