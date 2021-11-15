@@ -13,3 +13,18 @@
         color: $color-white;
     }
 }
+
+.btn-hard-sm{
+    width: 129px;
+    height: 39px;
+    color: $color-main-black;
+    background-color: $color-main-orange;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    transition: all .3s ease;
+    &:hover{
+        color: $color-white;
+    }
+}

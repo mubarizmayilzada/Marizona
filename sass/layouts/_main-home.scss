@@ -33,7 +33,167 @@
     }
 }
 
-
+.wrapper{
+    margin-top: 50px;
+    .ads{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        text-shadow: 0px 0px 4px hsla(0, 0%, 0%, 0.7);
+        margin-bottom: 40px;
+        span{
+            font-family: 'Norican', cursive;
+            font-size: 3.5rem;
+            color: $color-main-orange;
+            line-height: 3.5rem;
+            margin-bottom: 2px;
+            display: block;
+        }
+        h2{
+            font-size: 4rem;
+            color: $color-white;
+            font-weight: 700;
+            line-height: 4rem;
+            margin-bottom: 1rem;
+        }
+        p{
+            font-size: 1.6rem;
+            color: $color-white;
+            line-height: 1.6rem;
+            margin-bottom: 3rem;
+            width: 190px;
+            overflow-wrap: break-word;
+        }
+        .ad-wrapper-1{
+            width: 52rem;
+            height: 53.2rem;
+            border-radius: 0.8rem;
+            padding: 3.5rem;
+            background-position: center;
+            background-size: cover;
+            background-image: url(../../uploads/images/banner1-h3.jpg);
+            background-repeat: no-repeat;
+            margin-bottom: 0px;
+            &:hover{
+                overflow: hidden;
+                background-size : 540px;
+            }
+            span{
+                color: $color-white;
+            }
+            h2{
+                font-size: 7rem;
+                color: $color-main-orange;
+                line-height: 7rem;
+            }
+            p{
+                line-height: 2.7rem;
+            }
+        }
+        .ads-wrapper{
+            height: 53.2rem;
+            .ad-wrappers{
+                width: 43rem;
+                height: 25rem;
+                padding: 3.5rem;
+            &__2{
+                span{
+                    color: $color-white;
+                }
+                background-image: url(../../uploads/images/banner2-h3.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 0.8rem;
+                &:hover{
+                    overflow: hidden;
+                    background-size : 450px;
+                }
+            }
+            &__3{
+                background-image: url(../../uploads/images/banner3-h33.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 0.8rem;
+                position: absolute;
+                bottom: 0;
+                &:hover{
+                    overflow: hidden;
+                    background-size : 450px;
+                }
+            }
+        }
+    } 
+        
+    
+        .ad-wrapper-4{
+            text-align: center;
+            align-items: center;
+            width: 295px;
+            height: 532px;
+            padding: 35px;
+            background-image: url(../../uploads/images/banner4-h3.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+            &:hover{
+                overflow: hidden;
+                background-size : 320px;
+            }
+            button{
+                background-color: $color-white;
+                color: $color-main-black;
+                transition: all .3s ease;
+                &:hover{
+                    background-color: $color-main-orange;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    
+    .slogans{
+        display: flex;
+        justify-content: space-between;
+        .slogan{
+            display: flex;
+            width: 410px;
+            height: 130px;
+            padding: 22px 30px;
+            border: 3px dashed rgb(229, 229, 229);
+            border-radius: 8px;
+            transition: border-color .5s ease;
+            &:hover{
+                border-color: $color-main-orange;
+            }
+            &__icon{
+                // margin-top: 7px;
+                width: 70px;
+                height: 70px;
+                margin-right: 27px;
+                transition: all .5s ease;
+                &:hover{
+                    width: 73px;
+                    height: 73px;
+                }
+            }
+            &__title{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 33px;
+                color: $color-main-black;
+            }
+            &__description{
+                font-size: 14px;
+                line-height: 25px;
+                color: #999;
+    
+            }
+        }
+    }
+}
 
 
 @media screen and (max-width: 1024px){
@@ -43,8 +203,110 @@
             right: 0 !important;
         }
     }
+    .wrapper{
+        .ads{
+            .ad-wrapper-1{
+                width: 377px ;
+                span{
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+                h2{
+                    line-height: 40px;
+                    font-size: 24px;
+                }
+                p{
+                    line-height: 27px;
+                    font-size: 15px;
+                }
+                button{
+                    width: 128px;
+                    height: 39px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+
+    .ad-wrapper-4{
+        width: 211px !important;
+        span{
+            font-size: 20px !important;
+            line-height: 20px !important;
+        }
+        h2{
+            font-size: 24px !important;
+            line-height: 40px !important;
+        }
+        p{
+            font-size: 16px;
+            line-height: 16px !important;
+        }
+        button{
+            width: 128px !important;
+            height: 39px !important;
+            font-size: 15px !important;
+        }
+    }
+    .wrapper{
+            .ad-wrappers{
+                width: 295px !important;
+                height: 255px !important;
+                margin: 0 17px 0 17px;
+                span{
+                    font-size: 20px !important;
+                    line-height: 20px !important;
+                }
+                h2{
+                    font-size: 24px !important;
+                    line-height: 40px !important;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 16px !important;
+                }
+                button{
+                    width: 128px !important;
+                    height: 39px !important;
+                    font-size: 15px !important;
+                }
+            }
+    }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 991px){
+    .slogans{
+        width: 600px !important;
+        display: block !important;
+        .slogan{
+            width: 600px !important;
+            margin-top: 10px !important;
+        }
+    }
+}
+@media screen and (max-width: 925px){
+    .wrapper{
+        .ads{
+            .ad-wrapper-1{
+                width: 221px;
+            }
+            .ad-wrappers{
+                width: 200px;
+            }
+        }}
+
+}
+@media screen and (max-width: 850px){
+    .wrapper{
+        .ads{
+            .ad-wrappers{
+                width: 200px !important;
+                margin: 0 !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 769px){
     main{
         .main{
             height: 80vh !important;
@@ -55,10 +317,89 @@
             }
         }
     }
+    .wrapper{
+        width: 525px !important;
+        .ads{
+            width: 525px !important;
+            display: block !important;
+            margin: 0 !important;
+            .ad-wrapper-1{
+                width: 525px !important;
+                height: 255px !important;
+                margin-bottom: 10px !important;
+
+            }
+            .ad-wrapper-4{
+                width: 525px !important;
+                height: 255px !important;
+                text-align: left;
+                margin-bottom: 30px !important;
+
+            }
+            .ad-wrappers{
+                width: 525px !important;
+                margin: 0 !important;
+                &__3{
+                    position: static !important;
+                    margin-top: 10px !important;
+                }
+            }
+        }
+    }
+    .slogans{
+        width: 525px !important;
+        display: block !important;
+        .slogan{
+            width: 525px !important;
+            margin-top: 10px !important;
+        }
+    }
 }
+
+@media screen and (max-width: 535px){
+    .wrapper{
+        width: 300px !important;
+        text-align: center !important;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto !important;
+        .ads{
+            width: 300px !important;
+        margin: 0 auto !important;
+            .ad-wrapper-1{
+                width: 300px !important;
+            }
+            .ad-wrapper-4{
+                width: 300px !important;
+                text-align: center !important;
+            }
+            .ad-wrappers{
+                width: 300px !important;
+            }
+        }
+    }
+    .slogans{
+        width: 300px !important;
+        .slogan{
+            width: 300px !important;
+            h3{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                justify-self: center;
+                justify-items: center;
+                margin-top: 15px;
+            }
+            p{
+                display: none !important;
+            }
+        }
+    }
+
+}
+
 @media screen and (max-width: 488px){
     .main{
-
         .main-ad{
             &__slogan{
                 font-size: 5rem !important;

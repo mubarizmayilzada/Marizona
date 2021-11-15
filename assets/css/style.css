@@ -74,6 +74,19 @@ body {
     background-color: #dfab00;
     color: #FFFFFF; }
 
+.btn-hard-sm {
+  width: 129px;
+  height: 39px;
+  color: #1E1D23;
+  background-color: #FFC222;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  transition: all .3s ease; }
+  .btn-hard-sm:hover {
+    color: #FFFFFF; }
+
 header {
   position: sticky;
   top: 0;
@@ -310,19 +323,272 @@ header {
       display: inline-block;
       margin-bottom: 30px; }
 
+.wrapper {
+  margin-top: 50px; }
+  .wrapper .ads {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 40px; }
+    .wrapper .ads span {
+      font-family: 'Norican', cursive;
+      font-size: 3.5rem;
+      color: #FFC222;
+      line-height: 3.5rem;
+      margin-bottom: 2px;
+      display: block; }
+    .wrapper .ads h2 {
+      font-size: 4rem;
+      color: #FFFFFF;
+      font-weight: 700;
+      line-height: 4rem;
+      margin-bottom: 1rem; }
+    .wrapper .ads p {
+      font-size: 1.6rem;
+      color: #FFFFFF;
+      line-height: 1.6rem;
+      margin-bottom: 3rem;
+      width: 190px;
+      overflow-wrap: break-word; }
+    .wrapper .ads .ad-wrapper-1 {
+      width: 52rem;
+      height: 53.2rem;
+      border-radius: 0.8rem;
+      padding: 3.5rem;
+      background-position: center;
+      background-size: cover;
+      background-image: url(../../uploads/images/banner1-h3.jpg);
+      background-repeat: no-repeat;
+      margin-bottom: 0px; }
+      .wrapper .ads .ad-wrapper-1:hover {
+        overflow: hidden;
+        background-size: 540px; }
+      .wrapper .ads .ad-wrapper-1 span {
+        color: #FFFFFF; }
+      .wrapper .ads .ad-wrapper-1 h2 {
+        font-size: 7rem;
+        color: #FFC222;
+        line-height: 7rem; }
+      .wrapper .ads .ad-wrapper-1 p {
+        line-height: 2.7rem; }
+    .wrapper .ads .ads-wrapper {
+      height: 53.2rem; }
+      .wrapper .ads .ads-wrapper .ad-wrappers {
+        width: 43rem;
+        height: 25rem;
+        padding: 3.5rem; }
+        .wrapper .ads .ads-wrapper .ad-wrappers__2 {
+          background-image: url(../../uploads/images/banner2-h3.jpg);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          border-radius: 0.8rem; }
+          .wrapper .ads .ads-wrapper .ad-wrappers__2 span {
+            color: #FFFFFF; }
+          .wrapper .ads .ads-wrapper .ad-wrappers__2:hover {
+            overflow: hidden;
+            background-size: 450px; }
+        .wrapper .ads .ads-wrapper .ad-wrappers__3 {
+          background-image: url(../../uploads/images/banner3-h33.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-radius: 0.8rem;
+          position: absolute;
+          bottom: 0; }
+          .wrapper .ads .ads-wrapper .ad-wrappers__3:hover {
+            overflow: hidden;
+            background-size: 450px; }
+    .wrapper .ads .ad-wrapper-4 {
+      text-align: center;
+      align-items: center;
+      width: 295px;
+      height: 532px;
+      padding: 35px;
+      background-image: url(../../uploads/images/banner4-h3.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 8px; }
+      .wrapper .ads .ad-wrapper-4:hover {
+        overflow: hidden;
+        background-size: 320px; }
+      .wrapper .ads .ad-wrapper-4 button {
+        background-color: #FFFFFF;
+        color: #1E1D23;
+        transition: all .3s ease; }
+        .wrapper .ads .ad-wrapper-4 button:hover {
+          background-color: #FFC222;
+          color: #FFFFFF; }
+  .wrapper .slogans {
+    display: flex;
+    justify-content: space-between; }
+    .wrapper .slogans .slogan {
+      display: flex;
+      width: 410px;
+      height: 130px;
+      padding: 22px 30px;
+      border: 3px dashed #e5e5e5;
+      border-radius: 8px;
+      transition: border-color .5s ease; }
+      .wrapper .slogans .slogan:hover {
+        border-color: #FFC222; }
+      .wrapper .slogans .slogan__icon {
+        width: 70px;
+        height: 70px;
+        margin-right: 27px;
+        transition: all .5s ease; }
+        .wrapper .slogans .slogan__icon:hover {
+          width: 73px;
+          height: 73px; }
+      .wrapper .slogans .slogan__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 33px;
+        color: #1E1D23; }
+      .wrapper .slogans .slogan__description {
+        font-size: 14px;
+        line-height: 25px;
+        color: #999; }
+
 @media screen and (max-width: 1024px) {
   .main {
     background-size: cover !important; }
     .main .main-ad {
-      right: 0 !important; } }
+      right: 0 !important; }
+  .wrapper .ads .ad-wrapper-1 {
+    width: 377px; }
+    .wrapper .ads .ad-wrapper-1 span {
+      font-size: 20px;
+      line-height: 20px; }
+    .wrapper .ads .ad-wrapper-1 h2 {
+      line-height: 40px;
+      font-size: 24px; }
+    .wrapper .ads .ad-wrapper-1 p {
+      line-height: 27px;
+      font-size: 15px; }
+    .wrapper .ads .ad-wrapper-1 button {
+      width: 128px;
+      height: 39px;
+      font-size: 15px; }
+  .ad-wrapper-4 {
+    width: 211px !important; }
+    .ad-wrapper-4 span {
+      font-size: 20px !important;
+      line-height: 20px !important; }
+    .ad-wrapper-4 h2 {
+      font-size: 24px !important;
+      line-height: 40px !important; }
+    .ad-wrapper-4 p {
+      font-size: 16px;
+      line-height: 16px !important; }
+    .ad-wrapper-4 button {
+      width: 128px !important;
+      height: 39px !important;
+      font-size: 15px !important; }
+  .wrapper .ad-wrappers {
+    width: 295px !important;
+    height: 255px !important;
+    margin: 0 17px 0 17px; }
+    .wrapper .ad-wrappers span {
+      font-size: 20px !important;
+      line-height: 20px !important; }
+    .wrapper .ad-wrappers h2 {
+      font-size: 24px !important;
+      line-height: 40px !important; }
+    .wrapper .ad-wrappers p {
+      font-size: 16px;
+      line-height: 16px !important; }
+    .wrapper .ad-wrappers button {
+      width: 128px !important;
+      height: 39px !important;
+      font-size: 15px !important; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
+  .slogans {
+    width: 600px !important;
+    display: block !important; }
+    .slogans .slogan {
+      width: 600px !important;
+      margin-top: 10px !important; } }
+
+@media screen and (max-width: 925px) {
+  .wrapper .ads .ad-wrapper-1 {
+    width: 221px; }
+  .wrapper .ads .ad-wrappers {
+    width: 200px; } }
+
+@media screen and (max-width: 850px) {
+  .wrapper .ads .ad-wrappers {
+    width: 200px !important;
+    margin: 0 !important; } }
+
+@media screen and (max-width: 769px) {
   main .main {
     height: 80vh !important; }
     main .main .main-ad {
       margin: 70px auto 0 auto !important;
       position: static !important;
-      text-align: center; } }
+      text-align: center; }
+  .wrapper {
+    width: 525px !important; }
+    .wrapper .ads {
+      width: 525px !important;
+      display: block !important;
+      margin: 0 !important; }
+      .wrapper .ads .ad-wrapper-1 {
+        width: 525px !important;
+        height: 255px !important;
+        margin-bottom: 10px !important; }
+      .wrapper .ads .ad-wrapper-4 {
+        width: 525px !important;
+        height: 255px !important;
+        text-align: left;
+        margin-bottom: 30px !important; }
+      .wrapper .ads .ad-wrappers {
+        width: 525px !important;
+        margin: 0 !important; }
+        .wrapper .ads .ad-wrappers__3 {
+          position: static !important;
+          margin-top: 10px !important; }
+  .slogans {
+    width: 525px !important;
+    display: block !important; }
+    .slogans .slogan {
+      width: 525px !important;
+      margin-top: 10px !important; } }
+
+@media screen and (max-width: 535px) {
+  .wrapper {
+    width: 300px !important;
+    text-align: center !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto !important; }
+    .wrapper .ads {
+      width: 300px !important;
+      margin: 0 auto !important; }
+      .wrapper .ads .ad-wrapper-1 {
+        width: 300px !important; }
+      .wrapper .ads .ad-wrapper-4 {
+        width: 300px !important;
+        text-align: center !important; }
+      .wrapper .ads .ad-wrappers {
+        width: 300px !important; }
+  .slogans {
+    width: 300px !important; }
+    .slogans .slogan {
+      width: 300px !important; }
+      .slogans .slogan h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
+        margin-top: 15px; }
+      .slogans .slogan p {
+        display: none !important; } }
 
 @media screen and (max-width: 488px) {
   .main .main-ad__slogan {
