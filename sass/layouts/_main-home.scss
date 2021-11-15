@@ -1,0 +1,91 @@
+.main{
+    width: 100%;
+    height: 120vh;
+    background-image: url(https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/slider1-h3.jpg);
+    background-repeat: no-repeat;
+    background-size: 2300px;
+    display: flex;
+    position: relative;
+    .main-ad{
+        position: absolute;
+        right: 100px;
+        top: 200px;
+        width: 500px;
+        height: 350px;
+        &__slogan{
+            font-family: 'Norican', cursive;
+            color: $color-white;
+            font-size: 6.2rem;
+            display: block;
+        }
+        &__title{
+            font-size: 90px;
+            font-weight: 700;
+            color: $color-main-orange;
+        }
+        &__description{
+            font-size: 1.8rem;
+            line-height: 3.2rem;
+            color: $color-white;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 1024px){
+    .main{
+        background-size: cover !important;
+        .main-ad{
+            right: 0 !important;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    main{
+        .main{
+            height: 80vh !important;
+            .main-ad{
+                margin: 70px auto 0 auto !important;
+                position: static !important;
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen and (max-width: 488px){
+    .main{
+
+        .main-ad{
+            &__slogan{
+                font-size: 5rem !important;
+            }
+            &__title{
+                font-size: 67px !important;
+            }
+            &__description{
+                font-size: 1.5rem !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    .main{
+        .main-ad{
+            &__slogan{
+                font-size: 3rem !important;
+            }
+            &__title{
+                font-size: 60px !important;
+            }
+            &__description{
+                font-size: 1.1rem !important;
+            }
+        }
+    }
+}
+
+

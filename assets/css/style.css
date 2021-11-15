@@ -1,69 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Norican&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Norican&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@keyframes off {
-  0% {
-    transform: translateX(50px);
-    width: 46px; }
-  50% {
-    width: 75px;
-    border-radius: 25px; }
-  100% {
-    transform: translateX(-21px);
-    width: 46px; } }
-
-@keyframes on {
-  0% {
-    transform: translateX(0px);
-    width: 46px; }
-  50% {
-    width: 75px;
-    border-radius: 25px; }
-  100% {
-    transform: translateX(51px);
-    width: 46px; } }
-
-@keyframes sun {
-  0% {
-    transform: rotate(170deg);
-    background-color: transparent;
-    box-shadow: 5px -1px 0px #fff;
-    filter: blur(0px); }
-  50% {
-    background-color: transparent;
-    box-shadow: 5px -1px 0px #fff;
-    filter: blur(0px); }
-  90% {
-    background-color: #f5daaa;
-    box-shadow: 0px 0px 10px #f5deb4, 0px 0px 20px #f5deb4, 0px 0px 30px #f5deb4, inset 0px 0px 2px #efd3a3;
-    filter: blur(1px); }
-  100% {
-    transform: rotate(0deg);
-    background-color: #f5daaa;
-    box-shadow: 0px 0px 10px #f5deb4, 0px 0px 20px #f5deb4, 0px 0px 30px #f5deb4, inset 0px 0px 2px #efd3a3;
-    filter: blur(1px); } }
-
-@keyframes moon {
-  0% {
-    transform: rotate(0deg);
-    filter: blur(1px); }
-  50% {
-    filter: blur(1px); }
-  90% {
-    background-color: transparent;
-    box-shadow: 5px -1px 0px #fff;
-    filter: blur(0px); }
-  100% {
-    transform: rotate(170deg);
-    background-color: transparent;
-    box-shadow: 5px -1px 0px #fff;
-    filter: blur(0px); } }
-
-*,
-*::after,
-*::before {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  color: #FFFFFF;
+  text-decoration: none; }
 
 html {
   font-size: 62.5%; }
@@ -82,163 +60,282 @@ body {
   font-family: 'Norican', cursive;
   font-family: 'Poppins', sans-serif; }
 
-.btn-hard-sm {
-  width: 147px;
-  height: 49px;
-  background-color: orange;
-  color: red;
-  padding: 12px 35px; }
-
-.header {
-  height: 70px;
-  padding: 0 30px;
-  background-color: #1E1D23; }
-  .header .sub-header {
-    height: 100%;
-    width: 1290px;
-    margin: 0 auto;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
+.btn-hard-md {
+  width: 173px;
+  height: 53px;
+  border-radius: 8px;
+  border: none;
+  background-color: #FFC222;
+  color: #1E1D23;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all .3s ease; }
+  .btn-hard-md:hover {
+    background-color: #dfab00;
     color: #FFFFFF; }
-    .header .sub-header .header-wrapper-left {
-      display: flex; }
-      .header .sub-header .header-wrapper-left .logo-marizona img {
-        margin-right: 1rem;
-        padding: 2rem;
-        width: 18rem; }
-      .header .sub-header .header-wrapper-left .header-nav {
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-        .header .sub-header .header-wrapper-left .header-nav a {
-          padding: 1.6rem;
-          font-size: 1.5rem;
-          font-weight: 700;
-          transition: color .5s ease; }
-          .header .sub-header .header-wrapper-left .header-nav a:hover, .header .sub-header .header-wrapper-left .header-nav a:focus {
-            color: #FFC222; }
-          .header .sub-header .header-wrapper-left .header-nav a img {
-            width: 1.2rem;
-            transform: translateY(0.3rem); }
-    .header .sub-header .header-wrapper-right {
-      display: flex; }
-      @media only screen and (max-width: 1024px) {
-        .header .sub-header .header-wrapper-right {
-          display: none; } }
-      .header .sub-header .header-wrapper-right .tel {
-        display: none; }
-      .header .sub-header .header-wrapper-right .telephone {
-        width: 4.5rem; }
-      .header .sub-header .header-wrapper-right .about-delivery {
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-        .header .sub-header .header-wrapper-right .about-delivery .delivery-icon img {
-          width: 5rem;
-          color: red;
-          margin-right: 1.5rem; }
-        .header .sub-header .header-wrapper-right .about-delivery .delivery-text {
-          font-size: 1.3rem;
-          font-weight: 500; }
-        .header .sub-header .header-wrapper-right .about-delivery .delivery-number {
-          font-size: 2.4rem;
-          font-weight: 700;
-          color: #FFC222;
-          margin-right: 1.5rem; }
-      .header .sub-header .header-wrapper-right .personal-things {
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-        .header .sub-header .header-wrapper-right .personal-things li {
-          padding: .5rem;
-          margin: .6rem;
-          width: 4.3rem;
-          height: 4.3rem;
-          border-radius: 50%;
-          border: 1px solid white;
-          transition: background-color .5s ease; }
-          .header .sub-header .header-wrapper-right .personal-things li:hover {
-            background-color: #FFC222; }
-          .header .sub-header .header-wrapper-right .personal-things li a {
-            display: flex;
-            align-items: center;
-            justify-items: center; }
-            .header .sub-header .header-wrapper-right .personal-things li a img {
-              width: 1.7rem;
-              margin: .7rem auto; }
-      .header .sub-header .header-wrapper-right .night-mode {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 1.5rem; }
-        .header .sub-header .header-wrapper-right .night-mode .switch {
-          position: relative;
-          width: 80px;
-          height: 35px;
-          margin: 0px;
-          appearance: none;
-          -webkit-appearance: none;
-          background-image: url(../../uploads/icons/night-mode.png);
-          background-size: cover;
-          background-repeat: no-repeat;
-          border-radius: 25px;
-          box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.7);
-          transition: background-image 0.7s ease-in-out;
-          outline: none;
-          cursor: pointer;
-          overflow: hidden; }
-          .header .sub-header .header-wrapper-right .night-mode .switch:checked {
-            background-image: url(../../uploads/icons/day-mode.png);
-            background-size: cover;
-            transition: background-image 1s ease-in-out; }
-            .header .sub-header .header-wrapper-right .night-mode .switch:checked:after {
-              animation: on 0.7s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
-              box-shadow: inset -5px -5px 4px rgba(53, 53, 53, 0.3); }
-            .header .sub-header .header-wrapper-right .night-mode .switch:checked:before {
-              content: "";
-              width: 15px;
-              height: 15px;
-              border-radius: 50%;
-              position: absolute;
-              left: 12px;
-              top: 6px;
-              transform-origin: 53px 10px;
-              background-color: transparent;
-              box-shadow: 5px -1px 0px #fff;
-              filter: blur(0px);
-              animation: sun 0.7s forwards ease; }
-          .header .sub-header .header-wrapper-right .night-mode .switch:after {
-            content: "";
-            width: 35px;
-            height: 34px;
-            border-radius: 45%;
-            background-color: #fff;
-            position: absolute;
-            left: 2px;
-            top: 1px;
-            transform: translateX(0px);
-            animation: off 0.7s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
-            box-shadow: inset 5px -5px 4px rgba(53, 53, 53, 0.3); }
-          .header .sub-header .header-wrapper-right .night-mode .switch:before {
-            content: "";
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            position: absolute;
-            left: -27px;
-            top: 6px;
-            filter: blur(1px);
-            background-color: #f5daaa;
-            box-shadow: 0px 0px 10px #f5deb4, 0px 0px 20px #f5deb4, 0px 0px 30px #f5deb4, inset 0px 0px 2px #efd3a3;
-            transform-origin: 53px 10px;
-            animation: moon 0.7s forwards ease; }
 
-@media only screen and (max-width: 1024px) {
-  .header-wrapper-right {
-    display: none; }
-  .tel {
-    display: block !important;
-    justify-content: center;
-    align-items: center;
-    background-color: blue; } }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9999; }
+  header nav {
+    height: 70px;
+    padding: 0 30px;
+    background-color: #1E1D23;
+    display: flex;
+    color: #FFFFFF;
+    justify-content: space-between !important; }
+    header nav .burger-menu {
+      position: relative;
+      padding-top: 10px;
+      border: none;
+      appearance: none;
+      outline: none;
+      display: none; }
+      header nav .burger-menu:checked ~ .header-nav-menu {
+        width: 280px; }
+        header nav .burger-menu:checked ~ .header-nav-menu li a {
+          font-size: 1.5rem; }
+      header nav .burger-menu::before {
+        content: "";
+        background: url(../../uploads/icons/burger.png) no-repeat;
+        background-size: 70px 70px;
+        background-position: -10px;
+        position: absolute;
+        width: 50px;
+        height: 50px; }
+    header nav .telephone {
+      display: none; }
+      header nav .telephone img {
+        width: 40px;
+        position: relative;
+        top: 18%;
+        right: 7px; }
+    header nav .header-nav-menu {
+      transition: all 2s ease  !important;
+      height: 345px;
+      background-color: #1E1D23;
+      width: 250px;
+      margin-top: 70px;
+      z-index: 99;
+      position: absolute;
+      left: 0;
+      width: 0px;
+      display: none;
+      transition: width 0.3s ease; }
+      header nav .header-nav-menu li {
+        transition: background-color 1s ease; }
+        header nav .header-nav-menu li a {
+          display: inline-block;
+          padding: 1.6rem;
+          font-size: 0rem;
+          font-weight: 700;
+          line-height: 5px;
+          transition: font-size 1.3s ease; }
+          header nav .header-nav-menu li a:hover {
+            color: #FFFFFF; }
+        header nav .header-nav-menu li:hover {
+          background-color: #FFC222; }
+    header nav .burger-menu-logo {
+      display: none; }
+    header nav .nav-wrap {
+      display: flex;
+      justify-content: space-between; }
+      header nav .nav-wrap .navbar-wrapper {
+        display: flex; }
+        header nav .nav-wrap .navbar-wrapper .logo-marizona {
+          width: 180px;
+          margin-right: 1rem;
+          padding: 2rem; }
+        header nav .nav-wrap .navbar-wrapper .logo-m {
+          width: 80px;
+          margin-right: 1rem;
+          padding: 2rem;
+          display: none; }
+        header nav .nav-wrap .navbar-wrapper .header-nav {
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          align-items: center; }
+          header nav .nav-wrap .navbar-wrapper .header-nav li a {
+            padding: 1.6rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            transition: color .5s ease; }
+            header nav .nav-wrap .navbar-wrapper .header-nav li a:hover, header nav .nav-wrap .navbar-wrapper .header-nav li a:focus {
+              color: #FFC222; }
+      header nav .nav-wrap .header-right-wrap {
+        display: flex; }
+        header nav .nav-wrap .header-right-wrap .tel {
+          display: none;
+          width: 4rem;
+          height: 4rem;
+          margin-right: -50px; }
+        header nav .nav-wrap .header-right-wrap .about-delivery {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          header nav .nav-wrap .header-right-wrap .about-delivery .delivery-icon img {
+            width: 5rem;
+            color: red;
+            margin-right: 1.5rem; }
+          header nav .nav-wrap .header-right-wrap .about-delivery .delivery-text {
+            font-size: 1.3rem;
+            font-weight: 500; }
+          header nav .nav-wrap .header-right-wrap .about-delivery .delivery-number {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #FFC222;
+            margin-right: 1.5rem; }
+        header nav .nav-wrap .header-right-wrap .personal-things {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          header nav .nav-wrap .header-right-wrap .personal-things li {
+            padding: .5rem;
+            margin: .6rem;
+            width: 4.3rem;
+            height: 4.3rem;
+            border-radius: 50%;
+            border: 1px solid white;
+            transition: background-color .5s ease; }
+            header nav .nav-wrap .header-right-wrap .personal-things li:hover {
+              background-color: #FFC222; }
+            header nav .nav-wrap .header-right-wrap .personal-things li a {
+              display: flex;
+              align-items: center;
+              justify-items: center; }
+              header nav .nav-wrap .header-right-wrap .personal-things li a img {
+                width: 1.7rem;
+                margin: .7rem auto; }
+
+@media screen and (max-width: 1210px) {
+  .about-delivery {
+    display: none !important; } }
+
+@media screen and (max-width: 991.5px) {
+  .nav-wrap {
+    justify-content: center !important; }
+  .personal-things {
+    display: none !important; } }
+
+@media screen and (max-width: 768px) {
+  .header-nav {
+    display: none !important; }
+  .burger-menu {
+    display: block !important; }
+  .header-nav-menu {
+    display: block !important; }
+  .telephone {
+    display: block !important; }
+  .nav-wrap {
+    position: relative;
+    right: -25px; } }
+
+@media screen and (max-width: 375px) {
+  .logo-marizona {
+    display: none !important; }
+  .logo-m {
+    display: block !important; } }
+
+.category {
+  height: 162px;
+  background-color: #00A149; }
+  .category .categories {
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: transparent; }
+    .category .categories-item {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      position: relative;
+      align-items: center;
+      width: 161px;
+      height: 121px;
+      transition: background-color .5s ease; }
+      .category .categories-item a:hover {
+        color: #FFFFFF; }
+      .category .categories-item:hover {
+        background: #FFC222; }
+      .category .categories-item span {
+        width: 100px;
+        display: block;
+        font-size: 1.3rem;
+        font-weight: 700;
+        transition: color .5s ease;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0); }
+      .category .categories-item img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px !important; }
+
+@media screen and (max-width: 375px) {
+  .categories-item {
+    margin: 0 auto; } }
+
+.main {
+  width: 100%;
+  height: 120vh;
+  background-image: url(https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/slider1-h3.jpg);
+  background-repeat: no-repeat;
+  background-size: 2300px;
+  display: flex;
+  position: relative; }
+  .main .main-ad {
+    position: absolute;
+    right: 100px;
+    top: 200px;
+    width: 500px;
+    height: 350px; }
+    .main .main-ad__slogan {
+      font-family: 'Norican', cursive;
+      color: #FFFFFF;
+      font-size: 6.2rem;
+      display: block; }
+    .main .main-ad__title {
+      font-size: 90px;
+      font-weight: 700;
+      color: #FFC222; }
+    .main .main-ad__description {
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+      color: #FFFFFF;
+      display: inline-block;
+      margin-bottom: 30px; }
+
+@media screen and (max-width: 1024px) {
+  .main {
+    background-size: cover !important; }
+    .main .main-ad {
+      right: 0 !important; } }
+
+@media screen and (max-width: 768px) {
+  main .main {
+    height: 80vh !important; }
+    main .main .main-ad {
+      margin: 70px auto 0 auto !important;
+      position: static !important;
+      text-align: center; } }
+
+@media screen and (max-width: 488px) {
+  .main .main-ad__slogan {
+    font-size: 5rem !important; }
+  .main .main-ad__title {
+    font-size: 67px !important; }
+  .main .main-ad__description {
+    font-size: 1.5rem !important; } }
+
+@media screen and (max-width: 375px) {
+  .main .main-ad__slogan {
+    font-size: 3rem !important; }
+  .main .main-ad__title {
+    font-size: 60px !important; }
+  .main .main-ad__description {
+    font-size: 1.1rem !important; } }

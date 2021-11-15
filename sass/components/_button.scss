@@ -1,7 +1,15 @@
-.btn-hard-sm{
-    width: 147px;
-    height: 49px;
-    background-color: orange;
-    color: red;
-    padding: 12px 35px;
+.btn-hard-md{
+    width: 173px;
+    height: 53px;
+    border-radius: 8px;
+    border: none;
+    background-color: $color-main-orange;
+    color: $color-main-black;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all .3s ease;
+    &:hover{
+        background-color: $color-main-text-orange;
+        color: $color-white;
+    }
 }

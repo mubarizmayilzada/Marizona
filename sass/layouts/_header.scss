@@ -1,62 +1,146 @@
-.header{
-    height: 70px;
-    padding: 0 30px;
-    background-color: $color-main-black;
-    
-    .sub-header{
-        height: 100%;
-        width: 1290px;
-        margin: 0 auto;
-        background-color: transparent;
-        display: flex;
-        justify-content: space-between;
-        color: $color-white;
 
-        .header-wrapper-left{
-            @include tablet{
-                // display: none;
+header{
+    position:sticky;
+    top: 0;
+    z-index: 9999;
+    nav{
+        height: 70px;
+        padding: 0 30px;
+        background-color: $color-main-black;
+        display: flex;
+        color: $color-white;
+        justify-content: space-between !important;
+
+            .burger-menu{
+                position: relative;
+                padding-top: 10px;
+                border: none;
+                appearance: none;
+                outline: none;
+                display: none;
+
+                &:checked ~ .header-nav-menu{                    
+                    width: 280px;
+                    li{
+                        a{
+                            font-size: 1.5rem;
+                        }
+                    
+                        
+                    }
+                }
+
+            &::before {
+                content: "";
+                background: url(../../uploads/icons/burger.png) no-repeat;
+                background-size: 70px 70px;
+                background-position: -10px;
+                position: absolute;
+                width: 50px;
+                height: 50px;
             }
-            display: flex;
-            .logo-marizona{
-                img{
-                    margin-right: 1rem;
-                    padding: 2rem;
-                    width: 18rem;
+        
+        }
+
+            
+        .telephone{
+            display: none;
+            img{
+                width: 40px;
+                position: relative;
+                top: 18%;
+                right: 7px;
+            }
+        }
+
+
+        
+        .header-nav-menu{
+            transition: all 2s ease  !important;
+            height: 345px;
+            background-color: $color-main-black;
+            width: 250px;
+            margin-top: 70px;
+            z-index: 99;
+            position: absolute;
+            left: 0;
+            width: 0px;
+            display: none;
+            transition: width 0.3s ease;
+
+        
+            li{
+                transition: background-color 1s ease;
+                a{
+                    display: inline-block;
+                    padding: 1.6rem;
+                    font-size: 0rem;
+                    font-weight: 700;
+                    line-height: 5px;
+                    transition: font-size 1.3s ease;
+
+                    &:hover{
+                        color: $color-white
+                    }
+                }
+
+                &:hover{
+                    background-color: $color-main-orange;
                 }
             }
-    
+        }
+
+        .burger-menu-logo{
+            display: none;
+        }
+
+        .nav-wrap{
+            display: flex;
+            justify-content: space-between;
+
+
+        .navbar-wrapper{
+            display: flex;
+
+            .logo-marizona{
+                width: 180px;
+                margin-right: 1rem;
+                padding: 2rem;
+            }
+            .logo-m{
+                width: 80px;
+                margin-right: 1rem;
+                padding: 2rem;
+                display: none;
+            }
             .header-nav{
                 display: flex;
+                text-align: center; 
+                justify-content: center; 
                 align-items: center;
-                justify-content: center;
-                a{
-                    padding: 1.6rem;
-                    font-size: 1.5rem;
-                    font-weight: 700;
-                    transition: color .5s ease;
-                
-                    &:hover,
-                    &:focus{
-                        color: $color-main-orange;
-                    }
-                    img{
-                        width: 1.2rem;
-                        transform: translateY(.3rem);
+
+                li{
+                    a{
+                        padding: 1.6rem;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        transition: color .5s ease;
+
+                        &:hover,
+                        &:focus{
+                            color: $color-main-orange;
+                        }
                     }
                 }
             }
         }
 
-
-        .header-wrapper-right{
-            @include tablet{
-                display: none;
-            }
+        .header-right-wrap{
             .tel{
                 display: none;
-            }
-            .telephone{
-                width: 4.5rem;    
+                width: 4rem;
+                height: 4rem;
+                margin-right: -50px;
             }
             display: flex;
             .about-delivery{
@@ -81,12 +165,12 @@
                     margin-right: 1.5rem;
                 }
             }
-    
+
             .personal-things{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-    
+
                 li{
                     padding: .5rem;
                     margin: .6rem;
@@ -109,111 +193,53 @@
                     }
                 }
             }
-    
-            .night-mode{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-left: 1.5rem;
-    
-                .switch {
-                    position: relative;
-                    width: 80px;
-                    height: 35px;
-                    margin: 0px;
-                    appearance: none;
-                    -webkit-appearance: none;
-                    background-image: url(../../uploads/icons/night-mode.png);
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    border-radius: 25px;
-                    box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.7);
-                    transition: background-image 0.7s ease-in-out;
-                    outline: none;
-                    cursor: pointer;
-                    overflow: hidden;
-                
-                  
-                    &:checked {
-                        background-image: url(../../uploads/icons/day-mode.png);
-                        background-size: cover;
-                        transition: background-image 1s ease-in-out;
-                
-                        &:after {
-                            animation: on 0.7s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
-                            box-shadow: inset -5px -5px 4px rgba(53, 53, 53, 0.3);
-                        }
-                
-                        &:before {
-                            content: "";
-                            width: 15px;
-                            height: 15px;
-                            border-radius: 50%;
-                            position: absolute;
-                            left: 12px;
-                            top: 6px;
-                            transform-origin: 53px 10px;
-                            background-color: transparent;
-                            box-shadow: 5px -1px 0px #fff;
-                            filter: blur(0px);
-                            animation: sun 0.7s forwards ease;
-                        }
-                    }
-                
-                      &:after {
-                        content: "";
-                        width: 35px;
-                        height: 34px;
-                        border-radius: 45%;
-                        background-color: #fff;
-                        position: absolute;
-                        left: 2px;
-                        top: 1px;
-                        transform: translateX(0px);
-                        animation: off 0.7s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
-                        box-shadow: inset 5px -5px 4px rgba(53, 53, 53, 0.3);
-                      }
-                
-                      &:before {
-                        content: "";
-                        width: 15px;
-                        height: 15px;
-                        border-radius: 50%;
-                        position: absolute;
-                        left: -27px;
-                        top: 6px;
-                        filter: blur(1px);
-                        background-color: #f5daaa;
-                        box-shadow: 0px 0px 10px #f5deb4, 0px 0px 20px #f5deb4, 0px 0px 30px #f5deb4,
-                          inset 0px 0px 2px #efd3a3;
-                        transform-origin: 53px 10px;
-                        animation: moon 0.7s forwards ease;
-                      }
-                
-                }
-            }
         }
-        
+    }
     }
 }
 
-
-
-
-
-
-@media only screen and (max-width: $tablet-width) {
-    .header-wrapper-right{
-        display: none;
+@media screen and (max-width: 1210px){
+    .about-delivery{
+        display: none !important;
     }
-    .tel{
+}
+@media screen and (max-width: 991.5px){
+    .nav-wrap{
+        justify-content: center !important;
+    }
+    .personal-things{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header-nav{
+            display: none !important;
+    }
+    .burger-menu{
+            display: block !important;
+    }    
+    .header-nav-menu{
         display: block !important;
-        justify-content: center;
-        align-items: center;
-        background-color: blue;
+    }
+    .telephone{
+        display: block !important;
+    }
+    .nav-wrap{
+        position: relative;
+        right: -25px;
     }
 }
 
+@media screen and (max-width: 375px){
+    .logo-marizona{
+        display: none !important;
+    }
+    .logo-m{
+            display: block !important;
+    }
+
+}
 
 
 
