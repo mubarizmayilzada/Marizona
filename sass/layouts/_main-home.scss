@@ -812,6 +812,177 @@
     }
 }
 
+footer{
+    .wrapper-stars{
+        position: relative;
+
+        .footer-content-wrapper{
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            width: 100%;
+    
+            .logo-marizona{
+                width: 100%;
+                position: relative;
+                img{
+                    position: relative;
+                    margin: 0 auto;
+                    margin-top: 50px;
+                    display:flex;
+                    width: 200px;
+                    background-color: black;
+                    z-index: 2;
+                }
+                span{
+                    position: absolute;
+                    top: 23px;
+                    z-index: 1;
+                    display: inline-block;
+                    width: 100%;
+                    height: 1px;
+                    background-color: $color-main-orange;
+                }
+            }
+    
+            .footer-content{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                margin-top: 70px;
+                color: $color-white;
+                h2{
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-bottom: 25px;
+                }
+                p{
+                    font-size: 15px;
+                    line-height: 27px;
+                    color: rgb(128, 128, 128);
+                    span{
+                        margin-left: 5px;
+                        color: $color-main-orange;
+                    }
+                }
+                .contact-info{
+                    text-align: center;
+                    h3{
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: $color-main-orange;
+                        margin-top: 15px;
+                    }
+                }
+                .pages{
+                    ul{
+                        li{
+                            a{
+                                color: rgb(128, 128, 128);
+                                font-size: 17px;
+                                line-height: 30px;
+                                letter-spacing: 1.2px;
+                                &:hover{
+                                    color: $color-main-orange;
+                                }
+                            }
+                        }
+                    }
+                }
+                .follow-us{
+                    ul{
+                        text-align: left;
+                        li{
+                            position: relative;
+                            padding: 5px;
+                            transition: all 1s ease;
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 5px;
+                            span{
+                                color: black;
+                                font-size: 15px;
+                                margin-left: 5px;
+                                transition: all 1s ease;
+                            }
+                            &:after{
+                                content: '';
+                                position: absolute;
+                                width: 0px;
+                                height: 100%;
+                                background-color: $color-main-orange;
+                                border-radius: 10px;
+                                top: 0;
+                                left: 0;
+                                z-index: -1;
+                                transition: all 1s ease;
+                            }
+                            &:hover{
+                                &::after{
+                                    width: 100%;
+                                }
+                                a{
+                                    color: $color-white;
+                                }
+                                span{
+                                    color: $color-white;
+                                }
+                            }
+                            a{
+                                display: inline-block;
+                                color: $color-main-orange;
+                                font-size: 21px;
+                                transition: all 1s ease;
+                            }
+                        }
+                    }
+                }
+
+                .sign-in{
+                    width: 300px;
+                    text-align: center;
+
+                    .input-wrapper{
+                        margin-top: 20px;
+                        padding: 6px;
+                        border: 0.5px solid rgb(38, 38, 38);
+                        display: flex;
+                        justify-content: space-between;
+                        input{
+                            font-size: 13px;
+                            width: 160px;
+                            height: 40px;
+                            padding: 0 15px;
+                            background-color: transparent;
+                            border: none;
+                            outline: none;
+                            color: $color-main-orange;
+                            &::placeholder{
+                                font-size: 15px;
+                            }
+                        }
+                        .subscribe-button{
+                            padding: 0 15px;
+                            height: 40px;
+                            background-color: $color-main-orange;
+                            color: #000;
+                            font-size: 14px;
+                            font-weight: 700;
+                            border-radius: 3px;
+                            border: none;
+                            transition: all .5s ease;
+                            &:hover{
+                                color: $color-white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
 @media screen and (max-width: 1480px){
     .scrollmagic-pin-spacer{
         display: none !important;
@@ -994,7 +1165,7 @@
             }
         }}
 
-        .random-product-about{
+    .random-product-about{
             display: block;
             img{
                 width: 500px !important;
@@ -1002,14 +1173,27 @@
             .description{
                 text-align: center;
             }
-        }
+    }
 
-        .special-posters{
+    .special-posters{
             text-align: left;
             .product-title{
                 font-size: 40px !important;
             }
-        }
+    }
+
+
+}
+@media screen and (max-width: 878px){
+    .footer-content{
+        flex-wrap: wrap;
+    }
+    .sign-in{
+        margin-top: 50px !important;
+    }
+    .wrapper-stars{
+        height: 900px !important;
+    }
 }
 @media screen and (max-width: 850px){
     .wrapper{
@@ -1117,6 +1301,14 @@
             width: 400px !important;
             margin-left: 55px !important;
         }
+    }
+}
+@media screen and (max-width: 578px){
+    .follow-us{
+        margin-top: 50px !important;
+    }
+    .wrapper-stars{
+        height: 800px !important;
     }
 }
 @media screen and (max-width: 535px){
@@ -1260,6 +1452,14 @@
         }
     }
 }
+@media screen and (max-width: 459px){
+    .open-hours{
+        margin-top: 50px !important;
+    }
+    .wrapper-stars{
+        height: 1000px !important;
+    }
+}
 @media screen and (max-width: 376px){
     .main{
         .main-ad{
@@ -1306,6 +1506,9 @@
             width: 150px !important;
             margin-left: 80px !important;
         }
+    }
+    .wrapper-stars{
+        height: 1050px !important;
     }
 }
 @media screen and (max-width: 320px){
