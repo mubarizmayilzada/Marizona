@@ -2061,3 +2061,118 @@ footer .wrapper-stars {
       height: 150px !important; }
     .menu-card-wrap .menu-card__body {
       text-align: left; } }
+
+.blogs {
+  margin: 100px 0; }
+  .blogs .blog {
+    display: flex;
+    justify-content: space-between; }
+    .blogs .blog .blog-posts {
+      display: block;
+      width: 75%; }
+      .blogs .blog .blog-posts .blog-post {
+        border: 1px solid #d1d1d1;
+        border-radius: 8px;
+        width: 100%;
+        margin-bottom: 35px; }
+        .blogs .blog .blog-posts .blog-post__img {
+          width: 100%;
+          height: 542px; }
+          .blogs .blog .blog-posts .blog-post__img img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            width: 100%;
+            height: 100%; }
+        .blogs .blog .blog-posts .blog-post__body {
+          padding: 40px;
+          width: 100%; }
+          .blogs .blog .blog-posts .blog-post__body__slash {
+            margin-left: 3px;
+            margin-right: 3px;
+            display: inline-block;
+            font-size: 12px;
+            line-height: 19px;
+            color: #8c8c8c;
+            margin-bottom: 10px; }
+          .blogs .blog .blog-posts .blog-post__body__category {
+            display: inline-block;
+            font-size: 13px;
+            line-height: 19px;
+            color: #8c8c8c;
+            margin-bottom: 10px; }
+          .blogs .blog .blog-posts .blog-post__body__time {
+            display: inline-block;
+            font-size: 12px;
+            line-height: 19px;
+            color: #8c8c8c;
+            margin-bottom: 10px; }
+          .blogs .blog .blog-posts .blog-post__body__title {
+            margin-bottom: 20px; }
+            .blogs .blog .blog-posts .blog-post__body__title a {
+              color: #1E1D23;
+              font-size: 30px;
+              font-weight: 700;
+              line-height: 34px;
+              transition: color .5s ease; }
+              .blogs .blog .blog-posts .blog-post__body__title a:hover {
+                color: #FFC222; }
+          .blogs .blog .blog-posts .blog-post__body__short-description {
+            font-size: 15px;
+            line-height: 27px;
+            color: gray;
+            margin-bottom: 20px;
+            height: 81px;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+          .blogs .blog .blog-posts .blog-post__body .btn-hard-md {
+            width: 140px;
+            height: 50px;
+            font-size: 14px; }
+
+.right-aside {
+  width: 22%; }
+  .right-aside span {
+    display: inline-block; }
+  .right-aside .categories {
+    border: 1px solid #d1d1d1;
+    border-radius: 16px;
+    padding: 8px; }
+    .right-aside .categories .category-title {
+      padding: 0px 20px 10px 20px;
+      color: #1E1D23;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 36px; }
+    .right-aside .categories__body {
+      background-color: #fbf7e8;
+      border-radius: 16px; }
+      .right-aside .categories__body__items li {
+        margin: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .right-aside .categories__body__items li:not(:last-child) {
+          border-bottom: 1.6px dashed #e5e5e5;
+          border-bottom-width: 1.6px; }
+        .right-aside .categories__body__items li a {
+          width: 100%;
+          color: #808080;
+          display: block;
+          margin-top: 15px; }
+          .right-aside .categories__body__items li a:hover {
+            color: #FFC222; }
+        .right-aside .categories__body__items li .item-overview {
+          display: flex;
+          align-items: center;
+          padding-bottom: 10px; }
+          .right-aside .categories__body__items li .item-overview img {
+            width: 25px; }
+          .right-aside .categories__body__items li .item-overview .category-title-sub {
+            font-size: 15px;
+            line-height: 24px;
+            margin-left: 10px; }
+        .right-aside .categories__body__items li .item-count {
+          color: #808080;
+          font-size: 11px;
+          line-height: 20px;
+          padding-top: 10px; }
