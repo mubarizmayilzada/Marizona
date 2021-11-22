@@ -40,6 +40,7 @@ table {
 a{
 	color: $color-white;
 	text-decoration: none;
+	display: inline-block;
 }
 
 html {
@@ -53,9 +54,4 @@ body {
 
 li{
     list-style: none;
-}
-
-a{
-    color: $color-white;
-    text-decoration: none;
 }

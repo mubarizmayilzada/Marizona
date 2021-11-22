@@ -163,7 +163,6 @@
             .slogan{
                 display: flex;
                 width: 410px;
-                height: 130px;
                 padding: 22px 30px;
                 border: 3px dashed rgb(229, 229, 229);
                 border-radius: 8px;
@@ -184,14 +183,13 @@
                 &__title{
                     font-weight: 700;
                     font-size: 18px;
-                    line-height: 33px;
+                    line-height: 25px;
                     color: $color-main-black;
                 }
                 &__description{
                     font-size: 14px;
-                    line-height: 25px;
+                    line-height: 20px;
                     color: #999;
-        
                 }
             }
         }
@@ -362,17 +360,17 @@
 
             .product-caption{
                 padding: 10px;
-                .product-stars{
-                    width: 80px;
-                    display: flex;
-                    justify-content: space-between;
+                // .product-stars{
+                //     width: 80px;
+                //     display: flex;
+                //     justify-content: space-between;
                     
-                    .rate-star{
-                        color: rgb(229, 229, 229);
-                        font-size: 12px;
-                        margin-bottom: 6px;
-                    }
-                }
+                //     .rate-star{
+                //         color: rgb(229, 229, 229);
+                //         font-size: 12px;
+                //         margin-bottom: 6px;
+                //     }
+                // }
                 .product-title{
                     line-height: 23px;
                     font-size: 18px;
@@ -387,61 +385,61 @@
                     color: rgb(128, 128, 128);
                     margin-bottom: 10px;
                 }
-                .price-basket{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    .price{
-                        font-size: 20px;
-                        font-weight: 700;
-                        line-height: 36px;
-                        color: $color-main-orange;
-                    }
-                    .main-price{
-                        font-size: 20px;
-                        font-weight: 700;
-                        line-height: 36px;
-                        color: $color-main-orange;
-                        display: none;
-                    }
-                    div{
-                        .is-sale{
-                            font-size: 17px;
-                            color: rgb(128, 128, 128);
-                            position: relative;
-                            margin-right: 5px;
-                            display: inline-block;
-                            &::before{
-                                content: "";
-                                position: absolute;
-                                top: 50%;
-                                width: 100%;
-                                height: 1px;
-                                background-color: rgb(128, 128, 128);
-                            }
-                        }
-                    }
+                // .price-basket{
+                //     display: flex;
+                //     justify-content: space-between;
+                //     align-items: center;
+                //     .price{
+                //         font-size: 20px;
+                //         font-weight: 700;
+                //         line-height: 36px;
+                //         color: $color-main-orange;
+                //     }
+                //     .main-price{
+                //         font-size: 20px;
+                //         font-weight: 700;
+                //         line-height: 36px;
+                //         color: $color-main-orange;
+                //         display: none;
+                //     }
+                //     div{
+                //         .is-sale{
+                //             font-size: 17px;
+                //             color: rgb(128, 128, 128);
+                //             position: relative;
+                //             margin-right: 5px;
+                //             display: inline-block;
+                //             &::before{
+                //                 content: "";
+                //                 position: absolute;
+                //                 top: 50%;
+                //                 width: 100%;
+                //                 height: 1px;
+                //                 background-color: rgb(128, 128, 128);
+                //             }
+                //         }
+                //     }
                     
-                    .basket{
-                        padding: 10px;
-                        background-color: $color-main-orange;
-                        border-radius: 8px;
-                        text-align: center;
-                        transition: all .5s ease;
-                        &:hover{
-                            background-color: $color-main-text-orange;
-                            i{
-                                color: white;
-                            }
-                        }
-                        a{
-                            color: $color-main-black;
-                            i{
-                                font-size: 13px;
-                            }
-                        }
-                    }
-                }
+                //     .basket{
+                //         padding: 10px;
+                //         background-color: $color-main-orange;
+                //         border-radius: 8px;
+                //         text-align: center;
+                //         transition: all .5s ease;
+                //         &:hover{
+                //             background-color: $color-main-text-orange;
+                //             i{
+                //                 color: white;
+                //             }
+                //         }
+                //         a{
+                //             color: $color-main-black;
+                //             i{
+                //                 font-size: 13px;
+                //             }
+                //         }
+                //     }
+                // }
             }
 
         }
@@ -488,6 +486,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        width: 100%;
         .product-item{
             width: 409px;
             padding: 10px;
@@ -812,6 +811,114 @@
     }
 }
 
+.lasted-news{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        &__text{
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 42px;
+        }
+        &__link{
+            color: $color-main-black;
+            font-size: 15px;
+            line-height: 27px;
+            &:hover{
+                color: $color-main-orange;
+            }
+            &__wrapper{
+                display: inline-block;
+                padding: 0px 10px;
+                border-radius: 8px;
+                background-color: $color-main-green;
+                i{
+                    color: $color-white;
+                }
+            }
+        }
+    }
+
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+
+
+        .blog-card{
+            border: 1px solid rgb(229, 229, 229);
+            border-radius: 8px;
+            width: 408px;
+            &__img{
+                border-radius: 8px;
+                    overflow: hidden;
+                img{
+                    width: 100%;
+                    border-radius: 8px;
+                    transition: all 1s ease;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            &__body{
+                padding: 30px;
+                padding-top: 10px;
+                &__slash{
+                    margin-left: 3px;
+                    margin-right: 3px;
+                    display: inline-block;
+                    font-size: 12px;
+                    line-height: 19px;
+                    color: rgb(140, 140, 140);
+                    margin-bottom: 10px;
+                }
+                &__category{
+                    display: inline-block;
+                    font-size: 13px;
+                    line-height: 19px;
+                    color: rgb(140, 140, 140);
+                    margin-bottom: 10px;
+                }
+                &__time{
+                    display: inline-block;
+                    font-size: 13px;
+                    line-height: 19px;
+                    color: rgb(140, 140, 140);
+                    margin-bottom: 10px;
+                }
+                &__title{
+                    a{
+                        color: $color-main-orange;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 23px;
+                        transition: color .5s ease;
+                        &:hover{
+                            color: $color-main-black;
+                        }
+                    }
+                    margin-bottom: 20px;
+                }
+                &__short-description{
+                    font-size: 13px;
+                    line-height: 27px;
+                    color: rgb(128, 128, 128);
+                    margin-bottom: 20px;
+                    height: 81px;
+                    overflow:hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}
+
+
 footer{
     .wrapper-stars{
         position: relative;
@@ -1041,6 +1148,25 @@ footer{
             font-size: 60px !important;
         }
     }
+    .lasted-news{
+        &__cards{
+            flex-wrap: wrap;
+            .blog-card{
+                margin-bottom: 20px;
+                width: 470px !important;
+                &:last-child{
+                width: 945px !important;
+                }
+            }
+        }
+    }
+    .slogans{
+        .slogan{
+            &__description{
+                font-size: 12px;
+            }
+        }
+    }
 }
 @media screen and (max-width: 1024px){
     .main{
@@ -1125,10 +1251,13 @@ footer{
 }
 @media screen and (max-width: 991px){
     .slogans{
-        width: 600px !important;
+        display: block !important;
+        text-align: center;
+        width: 100% !important;
         display: block !important;
         .slogan{
-            width: 600px !important;
+        display: block !important;
+            width: 100% !important;
             margin-top: 10px !important;
         }
     }
@@ -1142,6 +1271,14 @@ footer{
                 img{
                     width: 300px !important;
                 }
+            }
+        }
+    }
+
+    .lasted-news{
+        &__cards{
+            .blog-card{
+                width: 945px !important;
             }
         }
     }
@@ -1270,10 +1407,10 @@ footer{
         }
     }
     .slogans{
-        width: 525px !important;
+        width: 100% !important;
         display: block !important;
         .slogan{
-            width: 525px !important;
+            width: 100% !important;
             margin-top: 10px !important;
         }
     }
@@ -1337,9 +1474,9 @@ footer{
         }
     }
     .slogans{
-        width: 300px !important;
+        width: 100% !important;
         .slogan{
-            width: 300px !important;
+            width: 100% !important;
             h3{
                 display: flex;
                 align-items: center;
@@ -1461,6 +1598,12 @@ footer{
     }
 }
 @media screen and (max-width: 376px){
+    .slogan{
+        &__title{
+            font-size: 15px !important;
+            line-height: 20px !important;
+        }
+    }
     .main{
         .main-ad{
             &__slogan{
@@ -1546,6 +1689,10 @@ footer{
             width: 225px !important;
             display: block !important;
             .slogan{
+                &__title{
+                    line-height: 20px !important;
+                    font-size: 11px !important;
+                }
                 width: 225px !important;
                 margin-top: 10px !important;
             }
