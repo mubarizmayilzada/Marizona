@@ -147,4 +147,181 @@
             }
         }
     }
+
+    .category-tags{
+        margin-top: 50px;
+
+        .category-title{
+            padding: 0px 20px 10px 0px;
+            color: $color-main-black;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 36px;
+            display: block;
+            border-bottom: 2px dashed rgb(209, 209, 209);
+            margin-bottom: 20px;
+        }
+        a{
+            font-size: 15px;
+            line-height: 26px;
+            display: inline-block;
+            color: $color-main-black;
+            border: 1px solid rgb(229, 229, 229);
+            border-radius: 20px;
+            padding: 0 20px;
+            margin: 0 8px 8px 0;
+            &:hover{
+                color: $color-main-orange;
+                border-color: $color-main-orange;
+            }
+        }
+    }
+
+    .recent-posts{
+        margin-top: 50px;
+        .category-title{
+            padding: 0px 20px 10px 0px;
+            color: $color-main-black;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 36px;
+            display: block;
+            border-bottom: 2px dashed rgb(209, 209, 209);
+            margin-bottom: 20px;
+        }
+        .recent-post{
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+
+                width: 90px;
+                height: 90px;
+                border-radius: 8px;
+                margin-right: 10px;
+            }
+            &__description{
+                padding: 20px 0;
+                    a{
+                        font-size: 13px;
+                        font-weight: 700;
+                        line-height: 21px;
+                        color: $color-main-black;
+                        transition: color 0.5s ease;
+                        &:hover{
+                            color: $color-main-orange;
+                        }
+                    }
+                .time{
+                    font-size: 12px;
+                    line-height: 21px;
+                    color: rgb(153, 153, 153);
+                }
+            }
+        }
+    }
+
+    .blog-ad{
+        margin-top: 50px;
+        border-radius: 8px;
+        text-align: center;
+        padding-top: 30px;
+        background-color: $color-main-orange;
+        span{
+            display: block;
+        }
+        &__wrapper{
+            &__slogan{
+                font-family: 'Norican', cursive;
+                font-size: 32px;
+                line-height: 30px;
+                color: $color-white;
+                margin-bottom: 10px;
+            }
+            &__title{
+                font-size: 50px;
+                font-weight: 700;
+                margin-bottom: 5px;
+                color: $color-main-green;
+            }
+            &__call{
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 13px;
+                margin-bottom: 10px;
+                color: $color-white;
+            }
+            &__number{
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 25px;
+                color: rgb(240, 0, 0);
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px){
+
+    .item-overview{
+        .category-title-sub{
+            font-size: 10px !important;
+        }
+    }
+    .item-count{
+        display: none !important;
+    }
+
+    .blogs{
+        .blog{
+            .blog-post{
+                &__img{
+                    width: 100%;
+                    height: 100% !important;
+                    img{
+                        border-top-left-radius: 8px;
+                        border-top-right-radius: 8px;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+
+    .right-aside{
+        display: none !important;
+    }
+
+    .blogs{
+        .blog{
+            .blog-posts{
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px){
+    .blogs{
+        .blog{
+            .blog-posts{
+                .blog-post{
+                    &__body{
+                        &__title{
+                            a{
+                                font-size: 23px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
