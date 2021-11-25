@@ -2290,3 +2290,162 @@ footer .wrapper-stars {
 @media screen and (max-width: 425px) {
   .blogs .blog .blog-posts .blog-post__body__title a {
     font-size: 23px !important; } }
+
+.shop {
+  margin: 100px 0; }
+  .shop .shop-wrapper {
+    display: flex;
+    justify-content: space-between; }
+    .shop .shop-wrapper .product-items-aside {
+      width: 75%; }
+      .shop .shop-wrapper .product-items-aside .cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        .shop .shop-wrapper .product-items-aside .cards .card {
+          width: 300px;
+          height: 478px;
+          border: 1px solid #e5e5e5;
+          padding: 15px;
+          border-radius: 30px;
+          margin-bottom: 30px; }
+          .shop .shop-wrapper .product-items-aside .cards .card .image-wrapper {
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            position: relative;
+            margin-bottom: 30px; }
+            .shop .shop-wrapper .product-items-aside .cards .card .image-wrapper::before {
+              content: "";
+              width: 100%;
+              height: 130px;
+              background-color: #ffefc688;
+              position: absolute;
+              bottom: 0;
+              border-radius: 8px;
+              transition: height 1s ease; }
+              .shop .shop-wrapper .product-items-aside .cards .card .image-wrapper::before:hover {
+                height: 260px !important; }
+            .shop .shop-wrapper .product-items-aside .cards .card .image-wrapper a {
+              width: 100%;
+              position: relative; }
+              .shop .shop-wrapper .product-items-aside .cards .card .image-wrapper a img {
+                width: 270px;
+                border-radius: 8px;
+                height: 100%;
+                transition: all 2s ease;
+                background-size: 0px; }
+                .shop .shop-wrapper .product-items-aside .cards .card .image-wrapper a img:hover {
+                  background-color: #FFC222;
+                  background-size: 100%;
+                  transform: scale(1.11);
+                  border-radius: 30px; }
+            .shop .shop-wrapper .product-items-aside .cards .card .image-wrapper span {
+              position: absolute;
+              top: 5px;
+              right: 5px; }
+              .shop .shop-wrapper .product-items-aside .cards .card .image-wrapper span i {
+                font-size: 20px;
+                color: #e5e5e5;
+                transition: color .5s ease; }
+                .shop .shop-wrapper .product-items-aside .cards .card .image-wrapper span i:hover {
+                  color: #1E1D23; }
+          .shop .shop-wrapper .product-items-aside .cards .card .product-caption {
+            padding: 10px; }
+            .shop .shop-wrapper .product-items-aside .cards .card .product-caption .product-title {
+              line-height: 23px;
+              font-size: 18px;
+              font-weight: 700;
+              margin-bottom: 6px;
+              color: #1E1D23;
+              display: inline-block; }
+            .shop .shop-wrapper .product-items-aside .cards .card .product-caption .product-mini-description {
+              font-size: 12px;
+              line-height: 21px;
+              color: gray;
+              margin-bottom: 10px; }
+
+@media screen and (max-width: 1024px) {
+  .shop .shop-wrapper .product-items-aside .cards .card {
+    width: 330px !important; } }
+
+@media screen and (max-width: 768px) {
+  .shop .shop-wrapper .product-items-aside {
+    width: 100% !important; } }
+
+@media screen and (max-width: 767px) {
+  .shop .shop-wrapper .product-items-aside {
+    width: 100% !important; }
+    .shop .shop-wrapper .product-items-aside .cards .card {
+      width: 100% !important; } }
+
+.contact-marizona {
+  margin: 100px 0; }
+  .contact-marizona span {
+    display: inline-block; }
+  .contact-marizona .contact-us__header h2 {
+    font-size: 42px;
+    line-height: 35px;
+    font-weight: 700;
+    color: #1E1D23;
+    margin-bottom: 20px; }
+  .contact-marizona .contact-us__header #contact-description {
+    font-size: 15px;
+    line-height: 27px;
+    color: gray;
+    margin-bottom: 50px; }
+  .contact-marizona .contact-us__header .contact-details {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px; }
+    .contact-marizona .contact-us__header .contact-details .contact-detail .icon {
+      padding: 0 15px;
+      margin-bottom: 25px;
+      display: block; }
+      .contact-marizona .contact-us__header .contact-details .contact-detail .icon i {
+        font-size: 45px;
+        color: #FFC222; }
+    .contact-marizona .contact-us__header .contact-details .contact-detail__title {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 32px;
+      color: #1E1D23;
+      margin-bottom: 10px; }
+    .contact-marizona .contact-us__header .contact-details .contact-detail p {
+      color: gray;
+      font-size: 16px;
+      line-height: 29px; }
+  .contact-marizona .contact-us__body {
+    display: flex;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px; }
+    .contact-marizona .contact-us__body__map {
+      width: 50%; }
+    .contact-marizona .contact-us__body__form {
+      width: 50%;
+      padding: 50px 80px; }
+      .contact-marizona .contact-us__body__form #contact-form-title {
+        font-size: 42px;
+        line-height: 35px;
+        font-weight: 700;
+        color: #1E1D23;
+        margin-bottom: 20px; }
+      .contact-marizona .contact-us__body__form #contact-form-description {
+        font-size: 15px;
+        line-height: 27px;
+        color: gray;
+        margin-bottom: 50px; }
+      .contact-marizona .contact-us__body__form .form-body input, .contact-marizona .contact-us__body__form .form-body textarea {
+        display: block;
+        padding: 10px;
+        border: 1px solid #e1e1e1;
+        border-radius: 8px;
+        outline: none;
+        margin-bottom: 15px;
+        width: 460px;
+        resize: none;
+        font-size: 15px;
+        color: #999999; }
+        .contact-marizona .contact-us__body__form .form-body input::placeholder, .contact-marizona .contact-us__body__form .form-body textarea::placeholder {
+          font-size: 14px;
+          color: #999999; }
