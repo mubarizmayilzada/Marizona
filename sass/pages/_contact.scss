@@ -5,6 +5,7 @@
     }
     .contact-us{
         &__header{
+            text-align: center;
             h2{
                 font-size: 42px;
                 line-height: 35px;
@@ -19,9 +20,9 @@
                 margin-bottom: 50px;
             }
             .contact-details{
-                width: 800px;
+                width: 100%;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 margin-bottom: 70px;
                 .contact-detail{
                     .icon{
@@ -73,14 +74,55 @@
                     margin-bottom: 50px;
                 }
 
-                .form-body{
+                #form{
+                    .form-control{
+                        border: none;
+                        padding: 0;
+                        margin: 0;
+                        margin-bottom: 15px;
+                        small{
+                            color: #e74c3c;
+                            font-size: 11px;
+                            margin-top: 5px;
+                            margin-left: 10px;
+                            // position: absolute;
+                            // bottom: 0;
+                            // left: 0;
+                            display: none;
+                        }
+
+                    }
+                    .form-control.error{
+                        input{
+                        border: 1px solid red;
+                        }
+                        small{
+                            display: block !important;
+                        }
+                    }
+                    .form-control.success{
+                        input{
+                            border: 1px solid green;
+                            background: transparent !important;
+                        }
+                        small{
+                            display: none !important;
+                        }
+                    }
+
+                    label{
+                        display: block;
+                        margin: 0px;
+                        padding: 0px;
+                    }
                     input,textarea{
+                        background: transparent;
                         display: block;
                         padding: 10px;
                         border: 1px solid rgb(225, 225, 225);
                         border-radius: 8px;
                         outline: none;
-                        margin-bottom: 15px;
+                        // margin-bottom: 15px;
                         width: 460px;
                         resize: none;
                         font-size: 15px;
