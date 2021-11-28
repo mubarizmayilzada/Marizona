@@ -54,6 +54,19 @@
                 background-color: #ffefc688;
                 // height: 226px;
                 position: relative;
+                .icon-wishlist{
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    i{
+                        font-size: 20px;
+                        color: rgb(200, 200, 200);
+                        transition: color .5s ease;
+                        &:hover{
+                            color: $color-main-black;
+                        }
+                    }
+                }
                 img{
                     width: 200px;
                     height: 200px;

@@ -1288,7 +1288,7 @@ footer .wrapper-stars {
           align-items: center;
           margin-bottom: 5px; }
           footer .wrapper-stars .footer-content-wrapper .footer-content .follow-us ul li span {
-            color: black;
+            color: #FFC222;
             font-size: 15px;
             margin-left: 5px;
             transition: all 1s ease; }
@@ -1863,6 +1863,16 @@ footer .wrapper-stars {
         border-radius: 30px;
         background-color: #ffefc688;
         position: relative; }
+        .todays-menu .menu-cards .menu-card-wrap .menu-card .icon-wishlist {
+          position: absolute;
+          top: 20px;
+          right: 20px; }
+          .todays-menu .menu-cards .menu-card-wrap .menu-card .icon-wishlist i {
+            font-size: 20px;
+            color: #c8c8c8;
+            transition: color .5s ease; }
+            .todays-menu .menu-cards .menu-card-wrap .menu-card .icon-wishlist i:hover {
+              color: #1E1D23; }
         .todays-menu .menu-cards .menu-card-wrap .menu-card img {
           width: 200px;
           height: 200px; }
@@ -2758,3 +2768,269 @@ footer .wrapper-stars {
     line-height: 13px !important; }
   .video-container span {
     font-size: 13px !important; } }
+
+.wishlist-slogan {
+  font-size: 30px;
+  font-weight: 500;
+  padding: 25px 30px;
+  border-bottom: 1px solid #d0d0d0;
+  color: #FFC222; }
+
+.empty-wishlist {
+  font-size: 23px;
+  font-weight: 600;
+  color: #1E1D23;
+  margin: 30px;
+  display: block; }
+  .empty-wishlist--none {
+    display: none; }
+
+.wishlist {
+  margin-top: 50px; }
+  .wishlist .title-wishlist {
+    text-align: center; }
+  .wishlist h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1E1D23;
+    margin-bottom: 40px; }
+  .wishlist .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px; }
+    .wishlist .buttons .button-select {
+      outline: none;
+      border: none;
+      border: 1px solid #e5e5e5;
+      border-radius: 28px;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 17px 40px;
+      border-radius: 28px;
+      color: #1E1D23;
+      background-color: transparent;
+      margin: 5px; }
+      .wishlist .buttons .button-select:hover {
+        border: 1px solid #FFC222; }
+      .wishlist .buttons .button-select:focus {
+        background-color: #FFC222; }
+  .wishlist .wishlist-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .wishlist .wishlist-cards .wishlist-card-wrap {
+      margin: 10px 20px;
+      padding: 10px;
+      border: 1px solid #e5e5e5;
+      border-radius: 30px;
+      width: 100%;
+      margin-bottom: 30px; }
+      .wishlist .wishlist-cards .wishlist-card-wrap .wishlist-card {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        border-radius: 30px;
+        background-color: #ffefc688;
+        position: relative; }
+        .wishlist .wishlist-cards .wishlist-card-wrap .wishlist-card .icon-wishlist {
+          position: absolute;
+          top: 20px;
+          right: 20px; }
+          .wishlist .wishlist-cards .wishlist-card-wrap .wishlist-card .icon-wishlist i {
+            font-size: 20px;
+            color: #c8c8c8;
+            transition: color .5s ease; }
+            .wishlist .wishlist-cards .wishlist-card-wrap .wishlist-card .icon-wishlist i:hover {
+              color: #1E1D23; }
+          .wishlist .wishlist-cards .wishlist-card-wrap .wishlist-card .icon-wishlist .is-wish {
+            color: black; }
+        .wishlist .wishlist-cards .wishlist-card-wrap .wishlist-card img {
+          width: 200px;
+          height: 200px; }
+        .wishlist .wishlist-cards .wishlist-card-wrap .wishlist-card__body {
+          padding: 30px 50px 30px 10px; }
+          .wishlist .wishlist-cards .wishlist-card-wrap .wishlist-card__body a span {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 34px;
+            color: #1E1D23;
+            transition: all 0.5s ease; }
+            .wishlist .wishlist-cards .wishlist-card-wrap .wishlist-card__body a span:hover {
+              color: #FFC222; }
+          .wishlist .wishlist-cards .wishlist-card-wrap .wishlist-card__body .short-description {
+            font-size: 15px;
+            line-height: 27px;
+            color: gray;
+            overflow: hidden; }
+          .wishlist .wishlist-cards .wishlist-card-wrap .wishlist-card__body .basket {
+            position: absolute;
+            bottom: 15px;
+            right: 15px; }
+
+@media screen and (max-width: 1000px) {
+  .wishlist .wishlist-cards .wishlist-card-wrap .wishlist-card img {
+    width: 150px !important;
+    height: 150px !important; }
+  .wishlist .wishlist-cards .wishlist-card-wrap .wishlist-card__body a span {
+    font-size: 18px !important;
+    line-height: 30px !important; }
+  .wishlist .wishlist-cards .wishlist-card-wrap .wishlist-card__body .short-description {
+    font-size: 12px !important; } }
+
+@media screen and (max-width: 992px) {
+  .wishlist-card-wrap {
+    width: 100% !important; }
+  .slogans .slogan__title {
+    font-size: 18px !important;
+    line-height: 33px !important; }
+  .slogans .slogan__description {
+    line-height: 25px !important; } }
+
+@media screen and (max-width: 768px) {
+  .buttons .button-select {
+    padding: 10px 30px !important;
+    font-size: 11px !important; } }
+
+@media screen and (max-width: 550px) {
+  .wishlist h2 {
+    font-size: 23px; }
+  .buttons .button-select {
+    padding: 8px 20px !important;
+    font-size: 10px !important; } }
+
+@media screen and (max-width: 430px) {
+  .wishlist h2 {
+    font-size: 21px; }
+  .buttons {
+    display: block !important; }
+  .wishlist-card-wrap .wishlist-card {
+    display: block !important;
+    text-align: center; }
+    .wishlist-card-wrap .wishlist-card img {
+      margin: 0 auto !important;
+      width: 250px !important;
+      height: 250px !important; }
+    .wishlist-card-wrap .wishlist-card__body {
+      text-align: left; } }
+
+.basket-section {
+  margin: 50px 0px; }
+  .basket-section__title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 2px solid #FFC222;
+    margin-bottom: 50px; }
+    .basket-section__title__product-count {
+      color: #1E1D23;
+      font-size: 20px;
+      font-weight: 500; }
+  .basket-section__body {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+    .basket-section__body .basket-products {
+      width: 72%;
+      margin-right: 50px; }
+      .basket-section__body .basket-products .basket-product {
+        width: 100%;
+        border: 1px solid #FFC222;
+        padding: 15px;
+        display: flex;
+        position: relative;
+        margin-bottom: 10px; }
+        .basket-section__body .basket-products .basket-product__img img {
+          width: 100%;
+          height: 100%;
+          background-color: orange; }
+        .basket-section__body .basket-products .basket-product__description {
+          padding: 25px; }
+          .basket-section__body .basket-products .basket-product__description__title {
+            color: #1E1D23;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 34px;
+            margin-bottom: 5px; }
+            .basket-section__body .basket-products .basket-product__description__title:hover {
+              color: #FFC222; }
+          .basket-section__body .basket-products .basket-product__description p {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 27px;
+            color: gray; }
+        .basket-section__body .basket-products .basket-product .basket-remove {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background-color: #FFC222;
+          font-size: 25px;
+          color: #1E1D23;
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          text-align: center;
+          transition: all .5s ease; }
+          .basket-section__body .basket-products .basket-product .basket-remove:hover {
+            background-color: #1E1D23;
+            color: #FFC222; }
+    .basket-section__body .basket-aside {
+      width: 25%; }
+      .basket-section__body .basket-aside .about-order {
+        width: 100%;
+        border: 1px solid gainsboro;
+        padding: 30px; }
+        .basket-section__body .basket-aside .about-order h2 {
+          font-size: 27px;
+          font-weight: 600;
+          margin-bottom: 20px; }
+        .basket-section__body .basket-aside .about-order .total-price {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 15px; }
+          .basket-section__body .basket-aside .about-order .total-price span {
+            font-size: 15px; }
+        .basket-section__body .basket-aside .about-order .total-shipping {
+          width: 100%;
+          display: flex;
+          margin-bottom: 15px;
+          justify-content: space-between; }
+          .basket-section__body .basket-aside .about-order .total-shipping span {
+            font-size: 15px; }
+        .basket-section__body .basket-aside .about-order p {
+          font-size: 15px;
+          color: gray; }
+        .basket-section__body .basket-aside .about-order .order-price {
+          display: block;
+          color: #FFC222;
+          border-top: 1px solid #FFC222;
+          width: 100%;
+          font-size: 25px;
+          font-weight: 700;
+          text-align: right;
+          margin-top: 20px;
+          padding-top: 15px; }
+
+@media screen and (max-width: 1000px) {
+  .basket-section__body {
+    display: block; }
+    .basket-section__body .basket-products {
+      width: 100%; }
+    .basket-section__body .basket-aside {
+      width: 100%; } }
+
+@media screen and (max-width: 500px) {
+  .basket-section__body {
+    margin-bottom: 100px; }
+    .basket-section__body .basket-products {
+      margin-bottom: 50px; }
+      .basket-section__body .basket-products .basket-product {
+        display: block; }
+        .basket-section__body .basket-products .basket-product__img {
+          padding: 20px; }
+          .basket-section__body .basket-products .basket-product__img img {
+            padding: 40px;
+            display: block; } }
