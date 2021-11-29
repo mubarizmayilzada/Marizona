@@ -812,7 +812,7 @@ header {
           width: 270px;
           border-radius: 8px;
           height: 100%;
-          transition: all 2s ease;
+          transition: all 0.7s ease;
           background-size: 0px; }
           .popular-dishes .cards .card .image-wrapper a img:hover {
             background-color: #FFC222;
