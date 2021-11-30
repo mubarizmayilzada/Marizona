@@ -330,6 +330,39 @@ body {
   to {
     transform: translateY(-2000px); } }
 
+.pagination ul {
+  display: flex;
+  background-color: #FFFFFF;
+  padding: 8px;
+  border-radius: 50px; }
+  .pagination ul li {
+    color: #20b2aa;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s ease; }
+  .pagination ul li.numb {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    margin: 0 3px; }
+  .pagination ul li.dots {
+    font-size: 22px;
+    cursor: default; }
+  .pagination ul li.libutton {
+    padding: 0 20px; }
+  .pagination ul li.prev {
+    border-radius: 25px 5px 5px 25px; }
+  .pagination ul li.next {
+    border-radius: 5px 25px 25px 5px; }
+  .pagination ul li.active,
+  .pagination ul li.numb:hover,
+  .pagination ul li.libutton:hover {
+    color: #fff;
+    background-color: #20b2aa; }
+
 header {
   position: sticky;
   top: 0;
@@ -3034,3 +3067,129 @@ footer .wrapper-stars {
           .basket-section__body .basket-products .basket-product__img img {
             padding: 40px;
             display: block; } }
+
+#login {
+  background-color: #00A149; }
+
+.login {
+  height: 100vh;
+  width: 100%; }
+  .login .login-wrapper {
+    background-color: white;
+    width: 522px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 100px;
+    text-align: center;
+    border: 1px solid #FFC222;
+    box-shadow: 0px 0px 18px -2px #ffc022;
+    -webkit-box-shadow: 0px 0px 18px -2px #ffc222;
+    -moz-box-shadow: 0px 0px 18px -2px #ffc222;
+    border-radius: 5px; }
+    .login .login-wrapper .login-logo {
+      width: 180px;
+      position: absolute;
+      top: -70px;
+      left: 50%;
+      transform: translateX(-50%); }
+    .login .login-wrapper span {
+      color: #1E1D23;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 22px;
+      margin-bottom: 20px;
+      display: block; }
+    .login .login-wrapper input {
+      width: 320px;
+      display: block;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #FFC222;
+      outline: none;
+      margin-bottom: 15px;
+      font-size: 15px;
+      color: #FFC222;
+      transition: border .3s ease; }
+      .login .login-wrapper input::placeholder {
+        color: #7d7d7d;
+        font-size: 14px; }
+      .login .login-wrapper input:focus {
+        border-color: #7d7d7d; }
+    .login .login-wrapper button {
+      margin: 10px 0 20px 0; }
+    .login .login-wrapper a {
+      color: #1E1D23;
+      display: block;
+      font-size: 13px;
+      font-weight: 400;
+      transition: all 0.3s ease;
+      text-decoration: underline; }
+      .login .login-wrapper a:hover {
+        color: #FFC222; }
+
+@media screen and (max-width: 520px) {
+  .login-wrapper {
+    width: 100% !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important; }
+    .login-wrapper input {
+      width: 100% !important; } }
+
+.register {
+  height: 100vh;
+  width: 100%; }
+  .register .register-wrapper {
+    background-color: white;
+    width: 522px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 100px;
+    text-align: center;
+    border: 1px solid #FFC222;
+    box-shadow: 0px 0px 18px -2px #ffc022;
+    -webkit-box-shadow: 0px 0px 18px -2px #ffc222;
+    -moz-box-shadow: 0px 0px 18px -2px #ffc222;
+    border-radius: 5px; }
+    .register .register-wrapper span {
+      color: #1E1D23;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 22px;
+      margin-bottom: 20px;
+      display: block; }
+    .register .register-wrapper input {
+      width: 320px;
+      display: block;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #FFC222;
+      outline: none;
+      margin-bottom: 15px;
+      font-size: 15px;
+      color: #FFC222; }
+      .register .register-wrapper input::placeholder {
+        color: #7d7d7d;
+        font-size: 14px; }
+    .register .register-wrapper button {
+      margin: 10px 0 20px 0; }
+    .register .register-wrapper a {
+      color: #1E1D23;
+      display: block;
+      font-size: 13px;
+      font-weight: 400;
+      transition: all 0.3s ease;
+      text-decoration: underline; }
+      .register .register-wrapper a:hover {
+        color: #FFC222; }
+
+@media screen and (max-width: 520px) {
+  .register-wrapper {
+    width: 100% !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important; }
+    .register-wrapper input {
+      width: 100% !important; } }
