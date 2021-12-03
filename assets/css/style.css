@@ -3350,3 +3350,91 @@ footer .wrapper-stars {
       line-height: 20px; }
       .blog-details .blog-wrapper .blog-post__body__sub-title i {
         font-size: 35px; } }
+
+.confirm {
+  background-color: #00A149;
+  width: 100%;
+  height: 100vh;
+  transition: all .5s ease; }
+
+.error {
+  opacity: 1; }
+
+.center-wrap form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
+  padding: 45px;
+  border: 1px solid #d1d1d1;
+  border-radius: 30px; }
+  .center-wrap form #img-confirm {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .center-wrap form #img-confirm .login-logo {
+      width: 150px;
+      margin-bottom: 35px; }
+  .center-wrap form p {
+    color: red;
+    font-size: 12px;
+    padding: 5px 5px 0 5px;
+    opacity: 0; }
+  .center-wrap form label {
+    font-size: 13px;
+    color: #FFC222;
+    font-weight: 500;
+    padding: 3px; }
+  .center-wrap form .fullname {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px; }
+    .center-wrap form .fullname label {
+      display: block; }
+    .center-wrap form .fullname .name {
+      margin-right: 20px; }
+    .center-wrap form .fullname #name, .center-wrap form .fullname #surname {
+      width: 200px;
+      padding: 12px 10px;
+      border-radius: 5px;
+      outline: none;
+      border: 1px solid #d1d1d1;
+      font-size: 13px;
+      line-height: 16px;
+      color: gray; }
+  .center-wrap form .address {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%; }
+    .center-wrap form .address label {
+      display: block; }
+    .center-wrap form .address #telephone, .center-wrap form .address #city {
+      width: 200px;
+      padding: 12px 10px;
+      border-radius: 5px;
+      outline: none;
+      border: 1px solid #d1d1d1;
+      font-size: 13px;
+      color: gray; }
+  .center-wrap form .address-details label {
+    display: block; }
+  .center-wrap form .address-details #address {
+    padding: 15px;
+    font-size: 13px;
+    color: gray;
+    outline: none;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    resize: none; }
+  .center-wrap form a {
+    width: 100%;
+    margin-top: 35px; }
+    .center-wrap form a #confirm-btn {
+      width: 100%; }
