@@ -3198,13 +3198,14 @@ footer .wrapper-stars {
   display: flex;
   justify-content: space-between;
   margin-top: 50px; }
+  .blog-details .blog-width {
+    width: 75%; }
   .blog-details .blog-wrapper {
     width: 100%;
     border: 1px solid gainsboro;
     border-radius: 8px; }
     .blog-details .blog-wrapper .blog-post .img {
       width: 100%;
-      height: 545px;
       margin-bottom: 25px; }
       .blog-details .blog-wrapper .blog-post .img img {
         border-top-left-radius: 8px;
@@ -3303,3 +3304,49 @@ footer .wrapper-stars {
         line-height: 27px; }
         .blog-details .comment-wrapper .comments .comment .comment-body .comment-reply:hover {
           color: orange; }
+  .blog-details .write-comment {
+    width: 100%;
+    margin: 50px 0; }
+    .blog-details .write-comment__title {
+      color: #1E1D23;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      padding-bottom: 24px;
+      margin-top: 50px; }
+    .blog-details .write-comment form textarea {
+      font-size: 15px;
+      color: gray;
+      resize: none;
+      height: 250px;
+      width: 100%;
+      outline: none;
+      border: 1px solid gainsboro;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px; }
+      .blog-details .write-comment form textarea::placeholder {
+        color: gray;
+        font-size: 15px; }
+
+@media screen and (max-width: 1024px) {
+  .right-aside {
+    display: none; }
+  .blog-details .blog-width {
+    width: 100%; }
+  .blog-details .blog-wrapper {
+    width: 100% !important; } }
+
+@media screen and (max-width: 768px) {
+  .blog-details .blog-wrapper {
+    width: 100% !important; }
+    .blog-details .blog-wrapper .blog-post .img {
+      height: initial; }
+    .blog-details .blog-wrapper .blog-post__body__title {
+      line-height: 22px;
+      font-size: 19px !important; }
+    .blog-details .blog-wrapper .blog-post__body__sub-title {
+      font-size: 16px;
+      line-height: 20px; }
+      .blog-details .blog-wrapper .blog-post__body__sub-title i {
+        font-size: 35px; } }

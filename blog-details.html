@@ -24,9 +24,75 @@
     <link rel="stylesheet" href="./sass/vendors/owl-carousel/owl.theme.default.min.css">
 </head>
 <body>
+
+    <header>
+        <nav>
+            <input type="checkbox" class="burger-menu">
+            <ul class="header-nav-menu">
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./faq.html">FAQs</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./account.html">Account</a></li>
+                <li><a href="./wishlist.html">Wishlist</a></li>
+                <li><a href="./basket.html">Basket</a></li>
+            </ul>
+            
+            <div class="container nav-wrap">
+                <div class="navbar-wrapper">
+                    <a href="./index.html"><img class="logo-marizona" src="./uploads/icons/Marizona.png" alt=""></a>
+                    <a href="./index.html"><img class="logo-m" src="./uploads/icons/M!.png" alt=""></a>
+                    <ul class="header-nav">
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./shop.html">Shop</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./faq.html">FAQs</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="header-right-wrap">
+                    <div class="about-delivery">
+                        <div class="delivery-icon">
+                            <img src="./uploads/icons/fast-delivery (2).png" alt="fast-delivery">
+                        </div>
+                        <ul>
+                            <li><span class="delivery-text">Call and Order in</span></li>
+                            <li><span class="delivery-number">+1 718-904-4450</span></li>
+                        </ul>
+                    </div>
+                    <ul class="personal-things">
+                        <li><a href="./account.html"><img src="./uploads/icons/user.png" alt="user"></a></li>
+                        <li><a href="./wishlist.html"><img src="./uploads/icons/heart (1).png" alt="hearth"></a></li>
+                        <li><a href="./basket.html"><img src="./uploads/icons/shopping-basket.png" alt="basket"></a></li>
+                    </ul>
+                    <img class="tel" src="./uploads/icons/telephone.png" alt="">
+                </div>
+            </div>
+
+
+
+            <a class="telephone" href="tel:0506570901">
+                <img src="./uploads/icons/telephone.png" alt="telephone">
+            </a>
+        </nav>
+    </header>
+
+    <section class="about-page">
+        <div>
+            <h1>About us</h1>
+            <span class="about-page__sub-text"><span>" Marizona "</span> is the perfect place for Fast food</span>
+        </div>
+    </section>
+
+
+
+
     <div class="container">
         <div class="blog-details">
-            <div style="width: 75%;">
+            <div class="blog-width">
                 <div class="blog-wrapper">
                     <div class="blog-post">
                         <div class="img">
@@ -108,9 +174,11 @@
                 </div>
                 
                 <div class="write-comment">
-                    <h2 class="write-comment__title">Leave a comment</h2>
+                    <h2 class="write-comment__title">Leave a Reply</h2>
                     <form>
-                        <input type="text">
+                        <label for="comment"></label>
+                        <textarea name="comment" id="comment" placeholder="Your Comment..."></textarea>
+                        <a href="#"><button class="btn-hard-md">POST COMMENT</button></a>
                     </form>
                 </div>
             </div>
@@ -253,5 +321,74 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+    <footer>
+        <div class="container-fluid" style="padding: 0px;">
+            <div class='wrapper-stars'>
+                <div class='stars'></div>
+                <div class='stars2'></div>
+                <div class='stars3'></div>
+
+
+                <div class="footer-content-wrapper">
+                    <div class="logo-marizona">
+                        <img src="./uploads/icons/Marizona.png" alt="">
+                        <span></span>
+                    </div>
+                    <div class="footer-content">
+                        <div class="contact-info">
+                            <h2>ADDRESS</h2>
+                            <p>570 8th Ave,<br>
+                                New York, NY 10018 <br>
+                                United States</p>
+                            <h3>050-657-09-01</h3>
+                        </div>
+                        <div class="pages">
+                            <h2>PAGES</h2>
+                            <ul>
+                                <li><a href="./menu.html">Menu</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./shop.html">Shop</a></li>
+                                <li><a href="./blog.html">Blog</a></li>
+                                <li><a href="./faq.html">FAQs</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="open-hours">
+                            <h2>OPENING HOURS</h2>
+                            <p>Monday – Friday: <span>8am – 4pm</span> <br>
+                                Saturday: <span>9am – 5pm</span> <br> Sunday: <span>9am – 8pm</span></p>
+                        </div>
+                        <div class="follow-us">
+                            <h2>SOCIAL LINKS</h2>
+                            <ul>
+                                <li><a target="_blank" href="https://www.instagram.com/mailzathe/?hl=en"><i class="fab fa-instagram"></i> <span>Instagram</span></a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/in/mubariz-mayilzada/"><i class="fab fa-linkedin"></i> <span>Linkedin</span></a></li>
+                                <li><a target="_blank" href="https://github.com/mubarizmayilzade"><i class="fab fa-github"></i> <span>Github</span></a></li>
+                                <li><a target="_blank" href="https://www.youtube.com/channel/UCG7-m5Wq40MqypUDH2O3ULA"><i class="fab fa-youtube"></i> <span>YouTube</span></a></li>
+                                <li><a target="_blank" href="#"><i class="fab fa-twitter"></i> <span>Twitter</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="sign-in">
+                            <h2>NEWSLETTER</h2>
+                            <p>Subscribe to the weekly newsletter for all
+                                the latest updates</p>
+                                <div class="input-wrapper">
+                                    <input type="email" placeholder="Your Email...">
+                                    <a href="#">
+                                        <button class="subscribe-button">SUBSCRIBE</button>
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
