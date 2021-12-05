@@ -18,7 +18,7 @@ header{
                 appearance: none;
                 outline: none;
                 display: none;
-                // opacity: 0;
+                z-index: -3;
                 &:checked ~ .header-nav-menu{                    
                     width: 280px;
                     li{
@@ -38,6 +38,7 @@ header{
                 position: absolute;
                 width: 50px;
                 height: 50px;
+                z-index: 999999;
             }
         
         }
