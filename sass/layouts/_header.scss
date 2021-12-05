@@ -14,11 +14,11 @@ header{
             .burger-menu{
                 position: relative;
                 padding-top: 10px;
+                margin-top: 10px;
                 border: none;
                 appearance: none;
                 outline: none;
                 display: none;
-                // opacity: 0;
                 &:checked ~ .header-nav-menu{                    
                     width: 280px;
                     li{
@@ -36,6 +36,8 @@ header{
                 background-size: 70px 70px;
                 background-position: -10px;
                 position: absolute;
+                top: 0;
+                left: 0;
                 width: 50px;
                 height: 50px;
             }
