@@ -24,6 +24,7 @@ header{
                     width: 280px;
                     li{
                         a{
+                            display: inline-block;
                             font-size: 1.5rem;
                         }
                     
@@ -81,7 +82,7 @@ header{
                     font-weight: 700;
                     line-height: 5px;
                     transition: font-size 1.3s ease;
-
+                    display: none;
                     &:hover{
                         color: $color-white
                     }

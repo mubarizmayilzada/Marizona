@@ -432,6 +432,7 @@ header {
       header nav .burger-menu:checked ~ .header-nav-menu {
         width: 280px; }
         header nav .burger-menu:checked ~ .header-nav-menu li a {
+          display: inline-block;
           font-size: 1.5rem; }
       header nav .burger-menu::before {
         content: "";
@@ -470,7 +471,8 @@ header {
           font-size: 0rem;
           font-weight: 700;
           line-height: 5px;
-          transition: font-size 1.3s ease; }
+          transition: font-size 1.3s ease;
+          display: none; }
           header nav .header-nav-menu li a:hover {
             color: #FFFFFF; }
         header nav .header-nav-menu li:hover {
