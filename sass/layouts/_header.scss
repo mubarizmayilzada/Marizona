@@ -171,6 +171,19 @@ header{
                 align-items: center;
                 justify-content: center;
 
+                .other-site{
+                    border: none;
+                    position: relative;
+                    a{
+                        img{
+                            position: absolute;
+                            top: 15px;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            width: 30px;
+                        }
+                    }
+                }
                 li{
                     padding: .5rem;
                     margin: .6rem;

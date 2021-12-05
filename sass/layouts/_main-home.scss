@@ -1201,8 +1201,6 @@ footer{
         }
     }
 
-
-
     .ad-wrapper-4{
         width: 211px !important;
         span{
@@ -1248,6 +1246,14 @@ footer{
             }
     }
 }
+@media screen and (max-width: 991.5px){
+    .menu-tablet{
+        display: flex !important;
+    }
+    footer{
+        margin-bottom: 80px !important;
+    }
+}
 @media screen and (max-width: 991px){
     .slogans{
         display: block !important;
@@ -1281,6 +1287,7 @@ footer{
             }
         }
     }
+
 }
 @media screen and (max-width: 925px){
     .main-parent-for-ads{
@@ -1363,6 +1370,7 @@ footer{
     }
 }
 @media screen and (max-width: 769px){
+
     main{
         .main{
             height: 80vh !important;
