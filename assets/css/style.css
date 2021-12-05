@@ -422,13 +422,11 @@ header {
     justify-content: space-between !important; }
     header nav .burger-menu {
       position: relative;
-      margin-top: 10px;
       padding-top: 10px;
       border: none;
       appearance: none;
       outline: none;
-      display: none;
-      z-index: 99999; }
+      display: none; }
       header nav .burger-menu:checked ~ .header-nav-menu {
         width: 280px; }
         header nav .burger-menu:checked ~ .header-nav-menu li a {
@@ -439,7 +437,6 @@ header {
         background-size: 70px 70px;
         background-position: -10px;
         position: absolute;
-        top: 0;
         width: 50px;
         height: 50px; }
     header nav .telephone {
