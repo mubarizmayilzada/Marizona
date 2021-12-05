@@ -432,6 +432,7 @@ header {
       header nav .burger-menu:checked ~ .header-nav-menu {
         width: 280px; }
         header nav .burger-menu:checked ~ .header-nav-menu li a {
+          transition: all 1.3s ease;
           display: inline-block;
           font-size: 1.5rem; }
       header nav .burger-menu::before {
@@ -452,7 +453,6 @@ header {
         top: 18%;
         right: 7px; }
     header nav .header-nav-menu {
-      transition: all 2s ease  !important;
       height: 345px;
       background-color: #1E1D23;
       width: 250px;
@@ -462,7 +462,7 @@ header {
       left: 0;
       width: 0px;
       display: none;
-      transition: width 0.3s ease; }
+      transition: width 0.5s ease; }
       header nav .header-nav-menu li {
         transition: background-color 1s ease; }
         header nav .header-nav-menu li a {
@@ -471,8 +471,8 @@ header {
           font-size: 0rem;
           font-weight: 700;
           line-height: 5px;
-          transition: font-size 1.3s ease;
-          display: none; }
+          display: none;
+          transition: all 1.3s ease; }
           header nav .header-nav-menu li a:hover {
             color: #FFFFFF; }
         header nav .header-nav-menu li:hover {

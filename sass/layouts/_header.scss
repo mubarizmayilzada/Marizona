@@ -24,6 +24,7 @@ header{
                     width: 280px;
                     li{
                         a{
+                            transition: all 1.3s ease;
                             display: inline-block;
                             font-size: 1.5rem;
                         }
@@ -60,7 +61,6 @@ header{
 
         
         .header-nav-menu{
-            transition: all 2s ease  !important;
             height: 345px;
             background-color: $color-main-black;
             width: 250px;
@@ -70,7 +70,7 @@ header{
             left: 0;
             width: 0px;
             display: none;
-            transition: width 0.3s ease;
+            transition: width 0.5s ease;
 
         
             li{
@@ -81,8 +81,8 @@ header{
                     font-size: 0rem;
                     font-weight: 700;
                     line-height: 5px;
-                    transition: font-size 1.3s ease;
                     display: none;
+                    transition: all 1.3s ease;
                     &:hover{
                         color: $color-white
                     }
