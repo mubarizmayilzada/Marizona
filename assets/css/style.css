@@ -521,7 +521,8 @@ header {
             font-size: 2.4rem;
             font-weight: 700;
             color: #FFC222;
-            margin-right: 1.5rem; }
+            margin-right: 1.5rem;
+            white-space: nowrap; }
         header nav .nav-wrap .header-right-wrap .personal-things {
           display: flex;
           align-items: center;
