@@ -2581,6 +2581,34 @@ footer .wrapper-stars {
           font-size: 14px;
           color: #999999; }
 
+@media screen and (max-width: 1200px) {
+  .contact-marizona .contact-us__body__map {
+    width: 30%; }
+  .contact-marizona .contact-us__body__form {
+    width: 70%; } }
+
+@media screen and (max-width: 991.5px) {
+  .contact-marizona .contact-us__body {
+    border: none; }
+    .contact-marizona .contact-us__body__map {
+      display: none; }
+    .contact-marizona .contact-us__body__form {
+      width: 100%;
+      padding: 0px; } }
+
+@media screen and (max-width: 500px) {
+  .contact-marizona .contact-us__body {
+    border: none; }
+    .contact-marizona .contact-us__body__map {
+      display: none; }
+    .contact-marizona .contact-us__body__form {
+      width: 100%;
+      padding: 0px; }
+      .contact-marizona .contact-us__body__form #form input {
+        width: 300px; }
+      .contact-marizona .contact-us__body__form #form textarea {
+        width: 300px; } }
+
 .about-header {
   max-width: 700px;
   margin: 0 auto;

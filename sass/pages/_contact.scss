@@ -85,9 +85,6 @@
                             font-size: 11px;
                             margin-top: 5px;
                             margin-left: 10px;
-                            // position: absolute;
-                            // bottom: 0;
-                            // left: 0;
                             display: none;
                         }
 
@@ -130,6 +127,60 @@
                         &::placeholder{
                             font-size: 14px;
                             color: rgb(153, 153, 153);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:1200px) {
+    .contact-marizona{
+        .contact-us{
+            &__body{
+                &__map{
+                    width: 30%;
+                }
+                &__form{
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:991.5px) {
+    .contact-marizona{
+        .contact-us{
+            &__body{
+                border: none;
+                &__map{
+                    display: none;
+                }
+                &__form{
+                    width: 100%;
+                    padding: 0px;
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:500px){
+    .contact-marizona{
+        .contact-us{
+            &__body{
+                border: none;
+                &__map{
+                    display: none;
+                }
+                &__form{
+                    width: 100%;
+                    padding: 0px;
+                    #form{
+                        input{
+                            width: 300px;
+                        }
+                        textarea{
+                            width: 300px;
                         }
                     }
                 }
