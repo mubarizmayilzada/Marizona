@@ -1930,7 +1930,9 @@ footer .wrapper-stars {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    cursor: pointer; }
     .todays-menu .buttons .button-select {
       outline: none;
       border: none;
@@ -1947,6 +1949,8 @@ footer .wrapper-stars {
         border: 1px solid #FFC222; }
       .todays-menu .buttons .button-select:focus {
         background-color: #FFC222; }
+    .todays-menu .buttons .active {
+      border: 1px solid #FFC222; }
   .todays-menu .menu-cards {
     display: flex;
     justify-content: space-between;
@@ -2474,6 +2478,8 @@ footer .wrapper-stars {
               line-height: 21px;
               color: gray;
               margin-bottom: 10px; }
+    .shop .shop-wrapper .right-aside .filter-shop .active span {
+      color: #FFC222 !important; }
 
 @media screen and (max-width: 1024px) {
   .shop .shop-wrapper .product-items-aside .cards .card {

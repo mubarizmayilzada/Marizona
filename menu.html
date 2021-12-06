@@ -92,16 +92,17 @@
              <h2>
                  Menus Of The Day
              </h2>
-             <div class="buttons">
-                 <a class="button-select" href="#">PIZZA</a>
-                 <a class="button-select" href="#">SUSHI</a>
-                 <a class="button-select" href="#">SALATS</a>
-                 <a class="button-select" href="#">BURGER</a>
-                 <a class="button-select" href="#">DESERTS</a>
-             </div>
+             <ul class="buttons">
+                 <li data-filter="all"  class="button-select active" href="#">ALL</li>
+                 <li data-filter="pizza"  class="button-select" href="#">PIZZA</li>
+                 <li data-filter="sushi"  class="button-select" href="#">SUSHI</li>
+                 <li data-filter="salat"  class="button-select" href="#">SALATS</li>
+                 <li data-filter="burger"  class="button-select" href="#">BURGER</li>
+                 <li data-filter="desert"  class="button-select" href="#">DESERTS</li>
+             </ul>
             </div>
              <div class="menu-cards">
-                 <div class="menu-card-wrap">
+                 <div class="menu-card-wrap" data-category="burger">
                      <div class="menu-card">
                          <img src="./uploads/images/3-1-600x600.png" alt="">
                          <span class="icon-wishlist"><i class="fas fa-heart"></i></span>
@@ -127,7 +128,7 @@
                          </div>
                      </div>
                  </div>
-                 <div class="menu-card-wrap">
+                 <div class="menu-card-wrap" data-category="burger">
                      <div class="menu-card">
                          <img src="./uploads/images/53-1.png" alt="">
                          <span class="icon-wishlist"><i class="fas fa-heart"></i></span>
@@ -154,7 +155,7 @@
                         </div>
                      </div>
                  </div>
-                 <div class="menu-card-wrap">
+                 <div class="menu-card-wrap" data-category="salat">
                      <div class="menu-card">
                          <img src="./uploads/images/27-1-600x600.png" alt="">
                          <span class="icon-wishlist"><i class="fas fa-heart"></i></span>
@@ -181,7 +182,7 @@
                         </div>
                      </div>
                  </div>
-                 <div class="menu-card-wrap">
+                 <div class="menu-card-wrap" data-category="sushi">
                      <div class="menu-card">
                          <img src="./uploads/images/54.1.png" alt="">
                          <span class="icon-wishlist"><i class="fas fa-heart"></i></span>
@@ -208,7 +209,7 @@
                         </div>
                      </div>
                  </div>
-                 <div class="menu-card-wrap">
+                 <div class="menu-card-wrap" data-category="burger">
                      <div class="menu-card">
                          <img src="./uploads/images/52-1.png" alt="">
                          <span class="icon-wishlist"><i class="fas fa-heart"></i></span>
@@ -235,7 +236,7 @@
                         </div>
                      </div>
                  </div>
-                 <div class="menu-card-wrap">
+                 <div class="menu-card-wrap" data-category="salat">
                      <div class="menu-card">
                          <img src="./uploads/images/5-1.png" alt="">
                          <span class="icon-wishlist"><i class="fas fa-heart"></i></span>
@@ -443,6 +444,6 @@
     </div>
     
 
-
+    <script src="./assets/js/filter.js"></script>
 </body>
 </html>

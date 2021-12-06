@@ -14,6 +14,8 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 40px;
+        flex-wrap: wrap;
+        cursor: pointer;
         .button-select{
             outline: none;
             border: none;
@@ -32,6 +34,9 @@
             &:focus{
                 background-color: $color-main-orange;
             }
+        }
+        .active{
+            border: 1px solid $color-main-orange;
         }
     }
 

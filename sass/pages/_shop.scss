@@ -94,6 +94,16 @@
             }
 
         }
+
+        .right-aside{
+            .filter-shop{
+                .active{
+                    span{
+                        color: $color-main-orange !important;
+                    }
+                }
+            }
+        }
     }
 }
 
