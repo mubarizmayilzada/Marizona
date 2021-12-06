@@ -462,7 +462,7 @@ header {
       left: 0;
       width: 0px;
       display: none;
-      transition: width 0.5s ease; }
+      transition: width 0.3s ease; }
       header nav .header-nav-menu li {
         transition: background-color 1s ease; }
         header nav .header-nav-menu li a {
