@@ -38,3 +38,20 @@
 
 		new FilterProduct().run();
 })();
+
+
+
+
+const pageTitle = document.getElementById("page-title");
+const spans = document.querySelectorAll(".category-title-sub-touch");
+let spanText;
+
+spans.forEach(span => {
+    span.addEventListener('click',(e) =>{
+        e.preventDefault();
+        spanText = e.target.innerText;
+        pageTitle.innerText = spanText;
+    })
+});
+
+
