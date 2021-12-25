@@ -20,8 +20,8 @@
             width: 161px;
             height: 121px;
             transition: background-color .5s ease;
-            &:hover{
-                background: $color-main-orange;
+            img:hover{
+                width: 120px !important;
             }
             span{
                 width: 100px;
@@ -34,17 +34,6 @@
                 left: 50%;
                 transform: translate(-50%, 0);
             }
-            // #img-background{
-            //     width: 100px;
-            //     height: 100px;
-            //     background-image: url(../../uploads/images/star-svgrepo-com.svg);
-            //     // background-color: $color-main-orange;
-            //     border-radius: 10px;
-            //     position: absolute;
-            //     top: 50%;
-            //     left: 50%;
-            //     transform: translate(-50%, -50%);
-            // }
             img{
                 position: absolute;
                 top: 50%;

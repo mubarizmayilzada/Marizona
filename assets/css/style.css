@@ -608,8 +608,8 @@ header {
       transition: background-color .5s ease; }
       .category .categories-item a:hover {
         color: #FFFFFF; }
-      .category .categories-item:hover {
-        background: #FFC222; }
+      .category .categories-item img:hover {
+        width: 120px !important; }
       .category .categories-item span {
         width: 100px;
         display: block;
